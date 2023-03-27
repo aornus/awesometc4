@@ -1,5 +1,85 @@
-
+\chapter{热处理实验}
 \section{TC4型钛合金的热处理工艺}
+从~\ref{sec:1.1}可知，对于不同合金体系可以通过控制其各自的相变过程，从而得到不同的组织结构。通过控制适宜的热处理工艺参数，获得所希望的显微组织，由此实现合金力学性能和工艺性能的改善。也就是说，通过控制合理的热处理工艺参数，来实现钛合金组织与性能的强化。钛合金热处理的特性如下：
+
+\begin{enumerate}
+	\item 钛合金的热处理主要用于α+β型钛合金。因为对于纯α型钛合金而言，马氏体相变不会使钛合金的性能发生显著变化。只能依赖淬火形成的亚稳相（包括马氏体相）的时效分解来进行。
+	\item 热处理应该避免形成ω相。形成ω相会使钛合金变脆，正确选择时效工艺（例如，采用较高的时效温度）即可使相分解。
+	\item 导热性差。导热性差可导致钛合金，尤其是α+β钛合金的淬透性差，淬火热应力大，淬火时零件易翘曲。由于导热性差，钛合金变形时易引起局部温升过高，使局部温度有可能超过β转变点而形成魏氏组织。
+	\item 化学性活泼。热处理时，钛合金易与氧和水蒸气反应，在工件表面形成具有一定深度的富氧层或氧化皮，使合金的性能降低。同时钛合金热处理时容易吸氢，引起氢脆。
+	\item β转变点差异大。即使是同一成分，但由于冶炼炉次的不同，其β转变温度有时差别很大。
+	\item 在β相区加热时，β晶粒长大倾向大。β晶粒粗化可使合金塑性急剧下降。
+\end{enumerate}
+
+常见的钛合金热处理工艺有：退火、淬火(往往加上时效处理)、形变热处理、化学热处理等，根据不同类型的钛合金，需要选择不同的热处理方式才能得到性能最佳的组织。
+
+%不同热处理作用如下：
+%\begin{enumerate}
+%	\item 退火：用于提高合金塑形、稳定组织。
+%	\item 淬火：用于强化组织，提高综合力学性能。
+%	\item 形变热处理：与压力加工结合起来，同时发挥相变强化和热处理强化的作用。
+%	\item 化学热强化：提高金属耐磨性，抗腐蚀性
+%\end{enumerate}
+
+%\subsection{热处理工艺对一般钛合金组织的影响}
+
 \section{TC4钛合金的热处理方案设计}
+对于α+β型的\ti 钛合金的固溶时效热处理工艺而言，其主要影响参数为温度和时间，在阅读了一些前人的研究报告\cite{mirror1}\cite{mirror2}之后，初步确定了固溶热处理的温度为950℃，本设计选择如下的参数来进行热处理操作。
+\begin{enumerate}
+	\item 固溶温度
+	\item 固溶时间
+	\item 冷却方式
+	\item 时效温度
+	\item 时效时间
+\end{enumerate}
+
 \section{TC4钛合金的热处理方案实验过程}
+\subsection{实验材料}
+实验用的是真空自耗两次熔炼所得的钛合金板，其化学成分参数与室温（20℃）力学性能参数如下表所示：
+\begin{table}[htbp]
+	\centering
+	\label{sec:mytc4chem}
+	\caption{试样的化学成分参数}
+	\begin{tabular}{ccccccccc}
+		\toprule
+	元素（$ \% $） & Al & V &Fe &C& O& N &H &其他杂质\\ \midrule
+	实际含量 & 6.12&4.06 &0.13 &0.012&0.112&0.009&0.004 &$ \le 0.4 $ \\
+	标准要求 &$ 5.5\sim 6.75 $ & $ 3.5\sim 4.5 $&$ \le 0.30 $ & $ \le 0.05 $&$ \le 0.20 $&$ \le 0.03$ &$ \le 0.015 $  & -- \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\label{sec:mytc4machin}
+	\caption{试样的力学性能参数}
+	\begin{tabular}{cccc}
+		\toprule
+		力学性能& 抗拉强度$Mpa  $& 屈服强度$ Mpa $&断后伸长率$ \% $\\ \midrule
+		实测值 & 983 &902 & 13\\
+		标准值 &$ \ge 895 $&$ \ge 830 $&$ \ge 10 $ \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+
+为了节约成本，本设计选择了尺寸较小的试样来进行实验，整体尺寸为$ 25mm\times 7.5mm $的柱体，具体参数如下图所示：
+\begin{figure}[htbp]
+	\centering
+	\begin{minipage}[t]{0.68\textwidth}
+		\centering
+		\includegraphics[width=6cm]{pic/试样}
+		\caption{试样的尺寸参数}
+		\label{fig:试样尺寸}
+	\end{minipage}
+	\begin{minipage}[t]{0.3\textwidth}
+		\centering
+		\includegraphics[width=6cm]{pic/模型}
+		\caption{试样的三维模型}
+		\label{fig:试样的三维模型}
+	\end{minipage}
+%	\caption{试样参数}
+\end{figure}
+
+
+
+
 \section{小结}
