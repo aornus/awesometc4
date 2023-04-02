@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.12.2)  2 APR 2023 16:48
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.12.2)  2 APR 2023 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1563,7 +1563,17 @@ LaTeX Font Info:    Overwriting symbol font `CJKmath' in version `bold'
 Package translations Info: No language package found. I am going to use `englis
 h' as default language. on input line 12.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 12.
- (./ModernTC4.aux)
+ (./ModernTC4.aux
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+
+LaTeX Warning: Label `fig:' multiply defined.
+
+)
 \openout1 = `ModernTC4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 12.
@@ -1588,7 +1598,8 @@ LaTeX Font Info:    ... okay on input line 12.
 LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 12.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
 12.
- (g:/Tex/texlive/2022/texmf-dist/tex/latex/newtx/untxexa.fd
+
+(g:/Tex/texlive/2022/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
 LaTeX Font Info:    ... okay on input line 12.
@@ -1746,37 +1757,125 @@ e 29.
 
  [2
 
+]
+第一章
+[1
+
+
+]
+File: 金相_甲.png Graphic file (type bmp)
+<金相_甲.png>
+File: 其他_甲.png Graphic file (type bmp)
+<其他_甲.png>
+Package natbib Info: Citation `RanXingGuRongWenDuDuiTi6Al4VELITaiHeJinXianWeiZu
+ZhiJiXingNengDeYingXiang2021' on page 2 undefined on input line 98.
+Package natbib Info: Citation `RanXingGuRongWenDuDuiTi6Al4VELITaiHeJinXianWeiZu
+ZhiJiXingNengDeYingXiang2021' on page 2 undefined on input line 98.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.110 ^^I}
+          
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.110 ^^I}
+          
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.110 ^^I}
+          
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.110 ^^I}
+          
+You have given more \span or & marks than there were
+in the preamble to the \halign or \valign now in progress.
+So I'll assume that you meant to type \cr instead.
+
+File: 金相_乙.png Graphic file (type bmp)
+<金相_乙.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: 断口_乙.png Graphic file (type bmp)
+<断口_乙.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[2] [3] [4]
+第二章
+[5
+
+]
+第三章
+[6
+
+]
+第四章
+[7
+
+]
+第五章
+[8
+
+]
+第六章
+[9
+
 ] (./ModernTC4.lof)
 \tf@lof=\write6
 \openout6 = `ModernTC4.lof'.
 
- [1
+ [10
 
 
-
-] (./ModernTC4.lot)
+] (./ModernTC4.lot
+Package natbib Info: Citation `RanXingGuRongWenDuDuiTi6Al4VELITaiHeJinXianWeiZu
+ZhiJiXingNengDeYingXiang2021' on page 11 undefined on input line 3.
+Package natbib Info: Citation `RanXingGuRongWenDuDuiTi6Al4VELITaiHeJinXianWeiZu
+ZhiJiXingNengDeYingXiang2021' on page 11 undefined on input line 3.
+)
 \tf@lot=\write7
 \openout7 = `ModernTC4.lot'.
 
- [2
+ [11
+
+] (./ModernTC4.bbl)
+Package natbib Info: There were undefined citations.
+ [12
+
 
 ]
-(./ModernTC4.bbl
-Package natbib Info: Empty `thebibliography' environment on input line 14.
-) [3
+(./ModernTC4.aux)
 
+LaTeX Warning: There were multiply-defined labels.
 
-] (./ModernTC4.aux)
 Package rerunfilecheck Info: File `ModernTC4.out' has not changed.
-(rerunfilecheck)             Checksum: 805D9557A22B37FBDE6DEE79232B67BD;228.
+(rerunfilecheck)             Checksum: 20EDECF4B98336EA9D480AE14639C5D3;1798.
  ) 
 Here is how much of TeX's memory you used:
- 44673 strings out of 476179
- 963826 string characters out of 5811308
- 1245127 words of memory out of 5000000
- 64643 multiletter control sequences out of 15000+600000
- 559785 words of font info for 192 fonts, out of 8000000 for 9000
+ 44839 strings out of 476179
+ 970310 string characters out of 5811308
+ 1257127 words of memory out of 5000000
+ 64785 multiletter control sequences out of 15000+600000
+ 559865 words of font info for 202 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  148i,12n,157p,1211b,845s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on ModernTC4.pdf (6 pages).
+Output written on ModernTC4.pdf (15 pages).
