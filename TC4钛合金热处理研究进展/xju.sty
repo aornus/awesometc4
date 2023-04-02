@@ -1,0 +1,120 @@
+
+\usepackage[UTF8,heading = true]{ctex}
+\usepackage{fontawesome5,hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+\newenvironment{abstract}{}{}
+\usepackage{abstract}
+\renewcommand{\abstractnamefont}{\bfseries\large}
+\renewcommand{\abstracttextfont}{}
+\setlength{\abstitleskip}{1em}
+\setlength{\absleftindent}{0pt}
+\setlength{\absrightindent}{0pt}
+%\biboptions{sort&compress}
+\ctexset
+{
+	style =
+	{
+		color = cyberpunk,
+		% multoc = true,
+		% withpart = true,
+		footwith = page,
+		% notomath = false,
+		rulewidth = 0.75pt,
+		% uppercase = false,
+		number-sep = {.},
+		figurepath = {pic}
+	},
+	%	link =
+	%	{
+		%		hyperlink = various,
+		%		linkcolor = skyblue,
+		%		linktopage = false
+		%	},
+	spread =
+	{
+		line = 1.355,
+		table = 1.05,
+		math = 1.05,
+		caption = 1,
+		footnote = 1
+	},
+	%	elsefont =
+	%	{
+		%		table-cap = \sffamily\zihao{5},
+		%		figure-cap = \sffamily\zihao{5},
+		%		listing-cap = \sffamily\zihao{5},
+		%		footnote = \rmfamily,
+		%		marginpar = \sffamily\zihao{-5}
+		%	},
+	thmset =
+	{
+		thmbox = true,
+		numberwith = chapter,
+		bodyfont = \normalfont,
+		headpunct = {.}
+	},
+	geoset =
+	{
+		vmargin = {2.54cm,2.54cm},
+		hmargin = 3.17cm,
+		headheight = 2.04cm,
+		headsep = 0.5cm,
+		ignorefoot
+	},
+	hdrset =
+	{
+		head-foot =
+		{
+			\easyhead[EC]{\color{SeaGreen}\kaishu\leftmark}
+			\easyhead[OC]{\color{SeaGreen}\kaishu\rightmark}
+			\easyhead[EL,OR]{\color{SeaGreen}\thepage}
+		}
+	},
+	tocset =
+	{
+		part =
+		{
+			format = \addvspace{1pc}\sffamily\large,
+			indent = 0\ccwd,
+			rule = \tocrule{}[\bfseries]
+		},
+		chapter =
+		{
+			format = \addvspace{1pc}\sffamily\large,
+			indent = 0\ccwd,
+			rule = \tocrule[0.7pc](1.2){$\cdot$}[\bfseries]
+		}
+	},
+	bibset =
+	{
+		backend = bibtex,
+		bib-style = numerical,
+		datafile = ciiiiiiiiite,
+	},
+	secnumdepth = 2,
+	tocdepth = 2
+}
+%\ebhdrset{
+	%	chap-label={\hspace{1em}},
+	%	sec-mark=标题标记
+	%}
+
+\fancypagestyle{Xju}
+{	\fancyhead{} %格式化原来的页眉页脚
+	\fancyfoot{} %格式化原来的页眉页脚
+	%	\fancyhead[L]{\LaTeX}
+	\fancyhead[C]{\zihao{-5}新疆大学毕业论文（设计）}
+	%	\fancyhead[R]{\thepage}
+	%	\fancyfoot[L]{ 修然自存}
+	\fancyfoot[C]{\zihao{-5} \thepage}
+	\renewcommand{\headrulewidth}{0.8pt}
+	\renewcommand{\footrulewidth}{0pt} }
+\fancypagestyle{plain}{
+	\pagestyle{Xju}
+}
+\title{\Huge \textit{{\color{violet}\faDharmachakra} Ti-6Al-4V 钛合金热处理工艺的研究现状及进展}}
+\author{杨宝震\thanks{\faMarker ：新疆大学机械工程学院教师}
+	\and 田欣洋\thanks{\faSkating：新疆大学机械工程学院本科学生}}
+\hypersetup{colorlinks=true,linkcolor=black,filecolor=black,urlcolor=black,	citecolor=black,}
+\newcommand{\keywords}[1]%
+{{\textbf{关键字}}: #1}

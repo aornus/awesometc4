@@ -1,0 +1,68 @@
+{
+    "InternalPDFViewer": {
+        "Embedded": true,
+        "File": "AwesomeTC4.pdf"
+    },
+    "Session": {
+        "Bookmarks": [
+            {
+                "bookmarkNumber": 1,
+                "fileName": "TC4钛合金的热处理实验.tex",
+                "lineNumber": 2,
+                "text": "TC4钛合金的热处理实验.tex\n从第\\ref{sec:1.1}节可知，对于不同合金体系可以通过控制其各自的相变过程，从而得到不同的组织结构。通过控制适宜的热处理工艺参数，获得所希望的显微组织，由此实现合金力学性能和工艺性能的改善。也就是说，通过控制合理的热处理工艺参数，来实现钛合金组织与性能的强化。钛合金热处理的特性如下："
+            },
+            {
+                "bookmarkNumber": 1,
+                "fileName": "绪论.tex",
+                "lineNumber": 55,
+                "text": "绪论.tex\n\\label{sec:1.1}"
+            }
+        ],
+        "CurrentFile": "绪论.tex",
+        "FileVersion": 1,
+        "Files": [
+            {
+                "Col": 0,
+                "EditorGroup": 0,
+                "FileName": "AwesomeTC4.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 46
+            },
+            {
+                "Col": 1,
+                "EditorGroup": 0,
+                "FileName": "ciiiiiiiiite.bib",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 166
+            },
+            {
+                "Col": 27,
+                "EditorGroup": 0,
+                "FileName": "TC4钛合金的热处理实验.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 49
+            },
+            {
+                "Col": 27,
+                "EditorGroup": 0,
+                "FileName": "xju.sty",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 11
+            },
+            {
+                "Col": 97,
+                "EditorGroup": 0,
+                "FileName": "绪论.tex",
+                "FirstLine": 182,
+                "FoldedLines": "",
+                "Line": 192
+            }
+        ],
+        "MasterFile": "",
+        "VerticalSplit": true
+    }
+}
