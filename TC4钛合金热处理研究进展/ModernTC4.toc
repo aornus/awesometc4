@@ -12,5 +12,4 @@
 \contentsline {chapter}{\numberline {第六章}结论}{9}{chapter.6}%
 \contentsline {chapter}{插图清单}{10}{section*.9}%
 \contentsline {chapter}{附表清单}{11}{section*.11}%
-\contentsline {chapter}{参考文献}{12}{section*.12}%
 \contentsfinish 

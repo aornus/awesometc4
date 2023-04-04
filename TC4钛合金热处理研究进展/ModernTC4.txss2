@@ -1,7 +1,7 @@
 {
     "InternalPDFViewer": {
         "Embedded": true,
-        "File": "../AwesomeTC4.pdf"
+        "File": "ModernTC4.pdf"
     },
     "Session": {
         "Bookmarks": [
@@ -22,12 +22,12 @@
         "FileVersion": 1,
         "Files": [
             {
-                "Col": 16,
+                "Col": 14,
                 "EditorGroup": 0,
                 "FileName": "ModernTC4.tex",
-                "FirstLine": 0,
+                "FirstLine": 41,
                 "FoldedLines": "",
-                "Line": 8
+                "Line": 51
             },
             {
                 "Col": 0,
@@ -38,12 +38,12 @@
                 "Line": 0
             },
             {
-                "Col": 6,
+                "Col": 22,
                 "EditorGroup": 0,
                 "FileName": "modern.bib",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 5
+                "Line": 8
             }
         ],
         "MasterFile": "",
