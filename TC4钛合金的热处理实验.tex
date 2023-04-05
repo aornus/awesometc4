@@ -23,35 +23,44 @@
 %\subsection{热处理工艺对一般钛合金组织的影响}
 
 \section{TC4钛合金的热处理方案设计}
-对于α+β型的\ti 钛合金的固溶时效热处理工艺而言，其主要影响参数为温度和时间，在阅读了一些前人的研究报告\cite{mirror1}\cite{mirror2}之后，初步确定了固溶热处理的温度为950℃，本设计选择如下的参数来进行热处理操作，如表2.1所示\footnote{其中WQ表示水冷、FC表示炉冷、AC表示空冷。}
+对于α+β型的\ti 钛合金的固溶时效热处理工艺而言，其主要影响参数为温度和时间，在阅读了一些前人的研究报告\cite{mirror1}\cite{mirror2}之后，初步确定了固溶热处理的温度为950℃，本设计选择如下的参数来进行热处理操作，并结合正交实验方法$ L9.3.4 $进行了优化，最终的热处理制度如表2.1所示\footnote{其中WQ表示水冷、FC表示炉冷、AC表示空冷。}
 \begin{table}[htbp]
 	\centering
 	\label{sec:myHT}
 	\caption{\ti 合金的热处理制度}
-\begin{tabular}{cccccc}
+\begin{tabular}{ccccccc}
 	\toprule
-		固溶温度/℃ &处理时间/h & 冷却方法 & 时效温度/℃  &处理时间/h & 冷却方法 \\
+		实验编号&固溶温度/℃ &处理时间/h & 冷却方法 & 时效温度/℃  &处理时间/h & 冷却方法 \\
 	\midrule
-	910 & 1 & $\mathrm{WQ}$ & 510 & 4 & $\mathrm{AC}$\\
-	910 & 1 & $\mathrm{FC}$  & 510 & 4 & $\mathrm{AC}$ \\
-	910 & 1 & $\mathrm{WQ}$ & 550 & 4 & $\mathrm{AC}$ \\
-	910 & 1 & $\mathrm{FC}$  & 550 & 4 & $\mathrm{AC}$ \\
-	910 & 1 & $\mathrm{WQ}$ & 590 & 4 & $\mathrm{AC}$ \\
-	910 & 1 & $\mathrm{FC}$  & 590 & 4 & $\mathrm{AC}$ \\
-	\midrule
-	950 & 1 & $\mathrm{WQ}$ & 510 & 4 & $\mathrm{AC}$ \\
-	950 & 1 & $\mathrm{FC}$ & 510 & 4 & $\mathrm{AC}$ \\
-	950 & 1 & $\mathrm{WQ}$ & 550 & 4 & $\mathrm{AC}$ \\
-	950 & 1 & $\mathrm{FC}$ & 550 & 4 & $\mathrm{AC}$ \\
-	950 & 1 & $\mathrm{WQ}$ & 590 & 4 & $\mathrm{AC}$ \\
-	950 & 1 & $\mathrm{FC}$ & 590 & 4 & $\mathrm{AC}$ \\
-	\midrule
-	990 & 1 & $\mathrm{WQ}$ & 510 & 4 & $\mathrm{AC}$ \\
-	990 & 1 & $\mathrm{FC}$ & 510 & 4 & $\mathrm{AC}$ \\
-	990 & 1 & $\mathrm{WQ}$ & 550 & 4 & $\mathrm{AC}$ \\
-	990 & 1 & $\mathrm{FC}$ & 550 & 4 & $\mathrm{AC}$ \\
-	990 & 1 & $\mathrm{WQ}$ & 590 & 4 & $\mathrm{AC}$ \\
-	990 & 1 & $\mathrm{FC}$ & 590 & 4 & $\mathrm{AC}$ \\
+	1 & 910 & 1 & WQ & 510 & 1 & AC \\
+	2 & 910 & 1 & FC & 590 & 2 & AC \\
+	3 & 910 & 1 & 液氮 & 550 & 3 & AC \\
+	4 & 950 & 1 & WQ & 590 & 3 & AC \\
+	5 & 950 & 1 & FC & 550 & 1 & AC \\
+	6 & 950 & 1 & 液氮 & 510 & 2 & AC \\
+	7 & 990 & 1 & WQ & 550 & 2 & AC \\
+	8 & 990 & 1 & FC & 510 & 3 & AC \\
+	9 & 990 & 1 & 液氮 & 590 & 1 & AC \\
+%	910 & 1 & $\mathrm{WQ}$ & 510 & 4 & $\mathrm{AC}$\\
+%	910 & 1 & $\mathrm{FC}$  & 510 & 4 & $\mathrm{AC}$ \\
+%	910 & 1 & $\mathrm{WQ}$ & 550 & 4 & $\mathrm{AC}$ \\
+%	910 & 1 & $\mathrm{FC}$  & 550 & 4 & $\mathrm{AC}$ \\
+%	910 & 1 & $\mathrm{WQ}$ & 590 & 4 & $\mathrm{AC}$ \\
+%	910 & 1 & $\mathrm{FC}$  & 590 & 4 & $\mathrm{AC}$ \\
+%	\midrule
+%	950 & 1 & $\mathrm{WQ}$ & 510 & 4 & $\mathrm{AC}$ \\
+%	950 & 1 & $\mathrm{FC}$ & 510 & 4 & $\mathrm{AC}$ \\
+%	950 & 1 & $\mathrm{WQ}$ & 550 & 4 & $\mathrm{AC}$ \\
+%	950 & 1 & $\mathrm{FC}$ & 550 & 4 & $\mathrm{AC}$ \\
+%	950 & 1 & $\mathrm{WQ}$ & 590 & 4 & $\mathrm{AC}$ \\
+%	950 & 1 & $\mathrm{FC}$ & 590 & 4 & $\mathrm{AC}$ \\
+%	\midrule
+%	990 & 1 & $\mathrm{WQ}$ & 510 & 4 & $\mathrm{AC}$ \\
+%	990 & 1 & $\mathrm{FC}$ & 510 & 4 & $\mathrm{AC}$ \\
+%	990 & 1 & $\mathrm{WQ}$ & 550 & 4 & $\mathrm{AC}$ \\
+%	990 & 1 & $\mathrm{FC}$ & 550 & 4 & $\mathrm{AC}$ \\
+%	990 & 1 & $\mathrm{WQ}$ & 590 & 4 & $\mathrm{AC}$ \\
+%	990 & 1 & $\mathrm{FC}$ & 590 & 4 & $\mathrm{AC}$ \\
 	\bottomrule
 \end{tabular}
 \end{table}
