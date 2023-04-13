@@ -1,4 +1,80 @@
-\chapter{热处理实验}
+\chapter{试样加工与热处理实验}
+\section{材料属性与试样加工过程}
+\subsection{实验材料属性}
+实验用的是真空自耗两次熔炼所得的钛合金板，其化学成分参数与室温（20℃）力学性能参数如\ref{sec:mytc4chem}与\ref{sec:mytc4machin}所示：
+\begin{table}[htbp]
+	\centering
+	\caption{试样的化学成分参数}
+	\label{sec:mytc4chem}
+	\begin{tabular}{ccccccccc}
+		\toprule
+		元素（$ \% $） & Al & V &Fe &C& O& N &H &其他杂质\\ \midrule
+		实际含量 & 6.12&4.06 &0.13 &0.012&0.112&0.009&0.004 &$ \le 0.4 $ \\
+		标准要求 &$ 5.5\sim 6.75 $ & $ 3.5\sim 4.5 $&$ \le 0.30 $ & $ \le 0.05 $&$ \le 0.20 $&$ \le 0.03$ &$ \le 0.015 $  & -- \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+	\centering
+	\caption{试样的力学性能参数}
+	\label{sec:mytc4machin}
+	\begin{tabular}{cccc}
+		\toprule
+		力学性能& 抗拉强度$Mpa  $& 屈服强度$ Mpa $&断后伸长率$ \% $\\ \midrule
+		实测值 & 983 &902 & 13\\
+		标准值 &$ \ge 895 $&$ \ge 830 $&$ \ge 10 $ \\ \bottomrule
+	\end{tabular}
+\end{table}
+
+
+为了节约成本，本设计选择了尺寸较小的试样来进行实验，整体尺寸为$ 25mm\times 7.5mm $的狗骨状片体，具体参数如\ref{fig:试样尺寸}所示：
+%3-28日上午，经过老师说明，由于试样为板材，加工成圆柱较为困难，故加工成二位平面的“狗骨头”
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.99\linewidth]{pic/试样}
+	\caption{试样的尺寸参数}
+	\label{fig:试样尺寸}
+\end{figure}
+
+%
+%\begin{figure}[!htbp]
+%	\centering
+%	\begin{minipage}[t]{0.68\textwidth}
+	%		\centering
+	%		\includegraphics[width=6cm]{pic/试样}
+	%		\caption{试样的尺寸参数}
+	%		\label{fig:试样尺寸}
+	%	\end{minipage}
+%	\begin{minipage}[t]{0.3\textwidth}
+	%		\centering
+	%		\includegraphics[width=6cm]{pic/模型}
+	%		\caption{试样的三维模型}
+	%		\label{fig:试样的三维模型}
+	%	\end{minipage}
+%%	\caption{试样参数}
+%\end{figure}
+\subsection{试样加工}
+本设计采用电火花线切割加工（Wire cut Electrical Discharge Machining，简称WEDM）的方法进行加工。在一开始只考虑了材料的利用率，就设计了如\ref{fig:badway}所示的密集排列。但是在实际加工的时候，却发现在这样的设计方式根本不可行——没有夹具的位置，且刀路比较长。
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\linewidth]{pic/刀路初步}
+	\caption{初步设计的刀路}
+	\label{fig:badway}
+\end{figure}
+
+
+在仔细考虑了加工方法、设备特点、加工成本等因素后，在工程训练中心张冠老师的协助下，将加工方式改进成了：先把大板切割成八个小板，再把小板叠在一起进行加工。的方法，最终切割出来了$ 7\times 8=56 $个试样。
+% TODO: \usepackage{graphicx} required
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{pic/堆叠式切割}
+	\caption{堆叠式切割}
+	\label{fig:goodway}
+\end{figure}
+
+
 \section{TC4型钛合金的热处理工艺}
 由~\ref{sec:1.1}可知，钛合金可以通过各种各样的相变过程来得到不同的组织结构。因而可以设计适宜的热处理工艺参数，来获得具有高强度的显微组织，由此实现\ti 合金力学性能和工艺性能的改善。\ti 合金热处理的一些特性如下：
 \begin{enumerate}
@@ -67,6 +143,7 @@
 	\centering
 	\caption{\ti 合金的热处理制度}
 	\label{sec:myHT}
+	\resizebox{\linewidth}{!}{
 \begin{tabular}{ccccccc}
 	\toprule
 		实验编号&固溶温度/℃ &处理时间/h & 冷却方法 & 时效温度/℃  &处理时间/h & 冷却方法 \\
@@ -102,73 +179,69 @@
 %	990 & 1 & $\mathrm{FC}$ & 590 & 4 & $\mathrm{AC}$ \\
 	\bottomrule
 \end{tabular}
+}
 \end{table}
 
 \subsection{正交实验分析方法}
 经过正交实验方法设计的实验虽然节省了试验次数，但是不能兼顾直观性，因而我们需要专门的分析工具才能分析出来，不同变量之间的相关性。
 \\
 
-{\Huge \color{red} 待补充}
+{\Huge \color{red} \textbf {待补充}}
 
 \section{TC4钛合金的热处理方案实验过程}
-\subsection{实验材料}
-实验用的是真空自耗两次熔炼所得的钛合金板，其化学成分参数与室温（20℃）力学性能参数如表2.2与表2.3所示：
-\begin{table}[htbp]
-	\centering
-	\label{sec:mytc4chem}
-	\caption{试样的化学成分参数}
-	\begin{tabular}{ccccccccc}
-		\toprule
-	元素（$ \% $） & Al & V &Fe &C& O& N &H &其他杂质\\ \midrule
-	实际含量 & 6.12&4.06 &0.13 &0.012&0.112&0.009&0.004 &$ \le 0.4 $ \\
-	标准要求 &$ 5.5\sim 6.75 $ & $ 3.5\sim 4.5 $&$ \le 0.30 $ & $ \le 0.05 $&$ \le 0.20 $&$ \le 0.03$ &$ \le 0.015 $  & -- \\ \bottomrule
-	\end{tabular}
-\end{table}
+
+\subsection{实验设备}
+本次设计热处理实验所用的设备为\text{\color{teal}JC-MF12-30}型箱式电阻炉，外观如\ref{fig: mymuffle}所示，设备规格如\ref{sec:mymuffle}所示：
+
 
 \begin{table}[htbp]
 	\centering
-	\label{sec:mytc4machin}
-	\caption{试样的力学性能参数}
-	\begin{tabular}{cccc}
-		\toprule
-		力学性能& 抗拉强度$Mpa  $& 屈服强度$ Mpa $&断后伸长率$ \% $\\ \midrule
-		实测值 & 983 &902 & 13\\
-		标准值 &$ \ge 895 $&$ \ge 830 $&$ \ge 10 $ \\ \bottomrule
-	\end{tabular}
+	\caption{\text{\color{teal}JC-MF12-30}型箱式电阻炉的规格}
+	\label{sec:mymuffle}
+		\begin{tabular}{cc}
+			\toprule
+			参数&值\\
+			\midrule
+			型号&JC-MF12-30\\
+			编号&803229\\
+			电压&380V\\
+			功率&12KW\\
+			常用温度&1150℃\\
+			最高温度&1200℃\\
+			炉膛尺寸& 500$ \times $ 300$ \times $ 200(mm) \\
+			制造日期&2023年2月\\
+			制造商& $\text{青岛聚创}^\text{\textregistered}  $环保集团有限公司\\
+			\bottomrule
+		\end{tabular}
 \end{table}
-
-
-为了节约成本，本设计选择了尺寸较小的试样来进行实验，整体尺寸为$ 25mm\times 7.5mm $的狗骨状片体，具体参数如下图所示：
-%3-28日上午，经过老师说明，由于试样为板材，加工成圆柱较为困难，故加工成二位平面的“狗骨头”
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.99\linewidth]{pic/试样}
-	\caption{试样的尺寸参数}
-	\label{fig:试样尺寸}
+	\includegraphics[width=0.7\linewidth]{pic/马弗炉}
+	\caption{马弗炉外形}
+	\label{fig: mymuffle}
 \end{figure}
 
-%
-%\begin{figure}[!htbp]
-%	\centering
-%	\begin{minipage}[t]{0.68\textwidth}
-%		\centering
-%		\includegraphics[width=6cm]{pic/试样}
-%		\caption{试样的尺寸参数}
-%		\label{fig:试样尺寸}
-%	\end{minipage}
-%	\begin{minipage}[t]{0.3\textwidth}
-%		\centering
-%		\includegraphics[width=6cm]{pic/模型}
-%		\caption{试样的三维模型}
-%		\label{fig:试样的三维模型}
-%	\end{minipage}
-%%	\caption{试样参数}
-%\end{figure}
-
-\subsection{实验设备}
-本次设计热处理实验所用的设备为\text{\color{teal}JC-MF12-30}型箱式电阻炉，
-
-
+固溶实验需要淬火，用到的淬火液体如\ref{fig:淬火用液体}所示：
+\begin{figure}[h!]
+	\centering
+	\subfigure[水淬液]{
+		\label{fig:subfig:WCfluid}
+		\includegraphics[scale=0.4]{pic/水淬液}}
+	\hspace{0.5in} % 两图片之间的距离
+	\subfigure[淬火油]{
+		\label{fig:subfig:OCfluid}
+		\includegraphics[scale=0.32]{pic/淬火油}}
+	\caption{淬火用的液体}
+	\label{fig:淬火用液体}
+\end{figure}
+\subsection{实验过程}
+本次实验需要进行两次热处理——固溶与时效，基本步骤大同小异：
+\begin{enumerate}
+	\item 设定好预定的温度梯度与加热时间。
+	\item 当温度到了预设值附近，戴好隔热手套，镊住式样，开炉门，快速准确放置好试样。
+	\item 保温了足够时间后，开炉门，迅速夹取处理后的试样，并放入准备好的对应淬火液中。
+	\item 擦拭淬火后的试样，处理表面脱落，归类试样。
+\end{enumerate}
 
 \section{小结}
