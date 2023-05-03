@@ -1,19 +1,66 @@
-\chapter{试样加工与热处理实验}
+\chapter{试样材料及研究方法}
 \section{材料属性与试样加工过程}
 \subsection{实验材料属性}
-实验用的是真空自耗两次熔炼所得的钛合金板，其化学成分参数与室温（20℃）力学性能参数如\ref{sec:mytc4chem}与\ref{sec:mytc4machin}所示：
+本实验用的是真空自耗两次熔炼所得的钛合金板，其化学成分参数与室温（20℃）力学性能参数如\ref{sec:mytc4chem}与\ref{sec:mytc4machin}所示：
 \begin{table}[htbp]
 	\centering
 	\caption{试样的化学成分参数}
 	\label{sec:mytc4chem}
-	\begin{tabular}{ccccccccc}
+	\begin{tabular}{cccccccc}
 		\toprule
-		元素（$ \% $） & Al & V &Fe &C& O& N &H &其他杂质\\ \midrule
-		实际含量 & 6.12&4.06 &0.13 &0.012&0.112&0.009&0.004 &$ \le 0.4 $ \\
-		标准要求 &$ 5.5\sim 6.75 $ & $ 3.5\sim 4.5 $&$ \le 0.30 $ & $ \le 0.05 $&$ \le 0.20 $&$ \le 0.03$ &$ \le 0.015 $  & -- \\ \bottomrule
+		元素（$ \% $） & Al & V &Fe &C& O& N &H \\ \midrule
+		实际含量 & 6.12&4.06 &0.13 &0.012&0.112&0.009&0.004  \\
+		标准要求 &$ 5.5\sim 6.75 $ & $ 3.5\sim 4.5 $&$ \le 0.30 $ & $ \le 0.05 $&$ \le 0.20 $&$ \le 0.03$ &$ \le 0.015 $ \\ \bottomrule
 	\end{tabular}
 \end{table}
 
+$\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的热机械工艺和热处理工艺的重要依据，相变过程如\ref{sec:Tc4betachange}所示。郭凯\cite{guokaiTC4taihejinrechuligongyideyanjiuxianzhuangjijinzhan2021}等人表示：当固溶温度高于 $\beta$ 相变时的温度时，合金的强度伴随温度的增加而下降，而且残余应力也开始大幅度的降低；当固溶温度低于 $\beta$ 相变时的温度时，合金的强度伴随温度的增加而增加，残余应力也略微提高。但是徐戊矫、谭玉全\cite{xujianGurongshixiaogongyiduiTC4taihejinzuzhijixingnengdeyingxiang2014}却表明：在相变点以下，随着退火温度的升高，材料的 强度、塑性和冲击韧性呈降低趋势。之所以会出现这种完全相反的结论，很可能是研究者对于相变点的具体值定义不清晰导致的，可见相变点的确定在固溶处理过程中是非常关键的。
+
+近年来，确定$ \beta $相变点的常见计算方法\cite{zhuhongTaihejinaVxiangbiandiandejizhongceshifangfatantao2013}主要有：连续升温金相法、X 射线衍射法、电阻法、等热膨胀法、元素含量法和神经网络模型预测预测法\cite{renchiqiangGurongshixiaoduiTC4taihejinxianweizuzhihelixuexingnengdeyingxiang2022}等。
+\begin{table}[htbp]
+	\centering
+	\caption{\ti 合金$ \alpha+\beta \to \beta $转变时发生的相变及存在的相}
+	\label{sec:Tc4betachange}
+	\begin{tabular}{ccc}
+		\toprule 室温相 & 相变过程 & 高温相 \\
+		\midrule$\alpha-\mathrm{Ti}$ & $\alpha-T i \rightarrow \beta-T i$ & $\beta-\mathrm{Ti}$ \\
+		$\alpha-\mathrm{Ti}-\mathrm{Al}$ & $\alpha-\mathrm{Ti}-\mathrm{Al} \rightarrow \beta-\mathrm{Ti}+\beta-\mathrm{Ti}-\mathrm{Al}$ & $\beta-\mathrm{Ti}, \beta-\mathrm{Ti}-\mathrm{Al}$ \\
+		$\beta- \mathrm{Ti}-\mathrm{V}$ & $\beta-\mathrm{Ti}-\mathrm{V} \rightarrow \beta^{-} \mathrm{Ti}-\mathrm{V}$ & $\beta-\mathrm{Ti}-\mathrm{V}$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+由于能力所限，本试验采用元素含量法来进行相变点的计算：根据合金中各元素对相变温度的影响来对相变点进行推算，通过\ref{sec:chem4ti}所示\cite{ananyaLocationBasedIntelligent2011}的因素，利用经验公式\ref{jingyan}来计算。
+\begin{equation}
+	T_\beta=885^{\circ} \mathrm{C}+\sum \text { 各元素含量 } \times \text { 各元素含量对 }(\alpha+\beta) / \beta \text { 相变点的影响 }
+	\label{jingyan}
+\end{equation}
+其中885℃为纯钛的相变点。
+\begin{table}[htbp]
+	\centering
+	\caption{部分元素含量对钛合金相变点的影响}
+	\label{sec:chem4ti}
+	\begin{tabular}{cccc}
+		\hline 元素名称 & 元素含量 $(\mathrm{Wt} \%)$ & 差值&累积值 \\
+		\hline $\mathrm{Al}$ & $2.0 \sim 7.0$ & 29+$23.0^{\circ} \mathrm{C} / 1.0 \%$ & $+123.76^{\circ} \mathrm{C}$ \\
+		$\mathrm{V}$ & $0 \sim 10.0$ & $-14.0^{\circ} \mathrm{C} / 1.0 \%$ & $-56.84^{\circ} \mathrm{C}$ \\
+		$\mathrm{Fe}$ & $0 \sim 15.0$ & $-16.5^{\circ} \mathrm{C} / 1.0 \%$ & $-2.145^{\circ} \mathrm{C}$
+		 \\
+		$\mathrm{C}$ & $0 \sim 0.15$ & $+2.0^{\circ} \mathrm{C} / 0.01 \%$ &$ +2.4^{\circ} \mathrm{C} $\\
+		$\mathrm{O}$ & $0 \sim 1.0$ & $+2.0^{\circ} \mathrm{C} / 0.01 \%$& $ +22.4^{\circ} \mathrm{C} $\\
+		$\mathrm{~N}$ & $0 \sim 0.5$ & $+5.5^{\circ} \mathrm{C} / 0.01 \%$& $ +4.95^{\circ} \mathrm{C} $\\
+		$\mathrm{H}$ & $0 \sim 0.50$ & $-5.5^{\circ} \mathrm{C} / 0.01 \%$ &$ -2.2^{\circ} \mathrm{C} $\\
+		总计&&&$ +92.325^{\circ} \mathrm{C} $\\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+关于$\beta$转变温度的具体值，目前广泛认同的是位于975℃附近，但是由于不同试样的合金元素的种类与含量的差异，尤其是局部化学成分的差异，使得不同研究人员实际测得的相变点温度有所差异\cite{wangtaoTC4hejinxiangbianwendujiancezhongjieguobuyizhiyuanyinfenxi2013}。
+
+姚德人等\cite{yaoderenTc4taihejinxiangbiandiandeceding1975}表明相变温度为975℃到980℃之间，此时的合金拥有最低的硬度，当温度略大时会发生$\beta$晶粒的显著长大；相变点以下50℃以内水淬，可以得到不同数量的初生$ \alpha $和马氏体$ \alpha^{\prime} $，而后再进行低温退火时，马氏体$ \alpha^{\prime} $又会转变为稳定的次生$ \alpha$和$ \beta $，可以得到较好的综合性能\footnote{\color{red}此文章写于1975年，但是仍然非常有参考价值}。刘伟东等人\cite{liuweidongTC4hejinVzhuanbianwendudejinxiangfacedingyulilunjisuan2014}通过连续升温金相法，使用EET\footnote{Empirical Electron Theory of solids and molecules“固体与分子经验电子理论”(简称余氏理论)}模型建模测得了\ti 合金的相变温度为974.58℃；孙宇、曾卫东等人\cite{sunyuYingyongrengongshenjingwangluoyanjiuhuaxueyuansuduitaihejinxiangbiandiandeyingxiang2010}通过人工神经网络ANN技术，运用反向传播算法，建立了三层神经网路-钛合金相变预测模型，最终预测得到在绝对误差为9.8℃的情况下，TC4的相变点为994.8℃。
+
+本设计的试样通过计算法得到的相变点温度为$ 885+92.325=977.325^{\circ} \mathrm{C} $，可见还是比较符合现实情况的。
 \begin{table}[htbp]
 	\centering
 	\caption{试样的力学性能参数}
@@ -85,7 +132,9 @@
 	\item β转变点差异大。即使是同一成分，但由于冶炼炉次的不同，其β转变温度有时差别很大。
 \end{enumerate}
 
-常见的\ti 钛合金热处理工艺有：退火、淬火(往往加上时效处理)、形变热处理等，不同的热处理方式得到的组织性能各异。 鲁媛媛,马保飞等人研究发现在时效温度为450、500和550℃时初生α相的含量随温度升高逐渐增加;而在时效温度为600℃和650℃条件下初生α相含量因高温溶解而明显减少, β相尺寸相应增大。当时效温度为550℃时, 所得钛合金的显微组织最佳\cite{timing}。刘婉颖、林元华等人通过实验发现：在960 ℃/1 h + WQ进行固溶处理和500 ℃/4 h + AC下进行时效处理得到的\ti 具有最佳的力学性能\cite{960500}；陈冠宇通过实验表明，在850℃进行退火处理时，在600℃进行时效处理可以使合金得到更好的耐腐蚀性能\cite{1200}；李宸宇证明\ti 合金在900℃空冷固溶两小时在530℃时效四小时后具有更好的强硬度，而且固溶后冷速越快，合金的强硬度越高、塑韧性越差\cite{900}。%第46页
+常见的\ti 钛合金热处理工艺有：退火、淬火(往往加上时效处理)、形变热处理等，不同的热处理方式得到的组织性能各异。
+
+ 鲁媛媛,马保飞等人研究发现在时效温度为450、500和550℃时初生α相的含量随温度升高逐渐增加;而在时效温度为600℃和650℃条件下初生α相含量因高温溶解而明显减少, β相尺寸相应增大。当时效温度为550℃时, 所得钛合金的显微组织最佳\cite{luyuanyuanShixiaochuliduiTC4taihejinweiguanzuzhihelixuexingnengdeyingxiang2019}。刘婉颖、林元华等人通过实验发现：在960 ℃/1 h + WQ进行固溶处理和500 ℃/4 h + AC下进行时效处理得到的\ti 具有最佳的力学性能\cite{LiuWanYingBuTongReChuLiGongYiDuiTi6Al4VTaiHeJinWeiGuanJieGouHeLiXueXingNengYingXiangYingWen2017}；陈冠宇通过实验表明，在850℃进行退火处理时，在600℃进行时效处理可以使合金得到更好的耐腐蚀性能\cite{1200}；李宸宇证明\ti 合金在900℃空冷固溶两小时在530℃时效四小时后具有更好的强硬度，而且固溶后冷速越快，合金的强硬度越高、塑韧性越差\cite{900}。%第46页
 
 
 %不同热处理作用如下：
@@ -99,7 +148,7 @@
 %\subsection{热处理工艺对一般钛合金组织的影响}
 
 \section{TC4钛合金的热处理方案设计}
-对于α+β型的\ti 钛合金的固溶时效热处理工艺而言，其主要影响参数为温度和时间。在阅读了一些前人的研究报告\cite{mirror1}\cite{mirror2}之后，初步确定了固溶处理的最佳温度为$ \beta $相变点以下30℃左右处理一个小时、时效温度在450℃左右处理三个小时后，组织组成与综合力学性能最好，于是本设计首先确定了如下四个变量：固溶温度、固溶方式、时效温度、时效时间。
+对于α+β型的\ti 钛合金的固溶时效热处理工艺而言，其主要影响参数为温度和时间。在研读了一些前人的研究报告\cite{mirror1}\cite{ranxingGurongwenduduiTi6Al4VELItaihejinxianweizuzhijixingnengdeyingxiang2021}之后，初步确定了固溶处理的最佳温度为$ \beta $相变点以下30℃左右（这里取整数$ 947.325\simeq950^{\circ} \mathrm{C} $）处理一个小时、时效温度在450℃左右处理三个小时后，组织组成与综合力学性能最好，于是本设计首先确定了如下四个变量：固溶温度、固溶方式、时效温度、时效时间。
 \subsection{正交实验设计}
 用正交实验代替传统的控制变量法来提高实验效率、材料利用率。传统的控制变量法在面对低因素、低水平的实验时可以设计出很清晰直观的实验，但是面对多因素（变量）、多水平的实验时，控制变量法就显得极为繁琐了。比如一个含有三个变量，每个变量有三个水平的实验就需要$ 3\times 3 \times 3=27$次实验，为了直观性而牺牲大量的成本、同时包含了太多无关的对照组，这样的实验设计在很大程度上是不符合可持续发展理念的，是在浪费资源。但好在有另外一种方法可以解决问题——正交试验设计法(Orthogonal experimental design)。
 
@@ -141,22 +190,22 @@
 从\ref{sec:first}可见，如果按照控制变量法设计实验，则至少需要$3\times2\times3  =18$次实验，才能穷举完所有变量各个水平之间的关系。为了给子孙后代留下天蓝、地绿、水清的美丽家园\footnote{出自2022年6月5日，习近平致2022年六五环境日国家主场活动的贺信}，本实验高举可持续发展理念伟大旗帜，并结合正交实验方法$\color{teal} L9.3.4 $对实验进行了优化。最终的热处理制度如下表所示\footnote{其中WQ表示水冷、FC表示炉冷、AC表示空冷。}
 \begin{table}[htbp]
 	\centering
-	\caption{\ti 合金的热处理制度}
+	\caption{\ti 改进后的热处理制度}
 	\label{sec:myHT}
 	\resizebox{\linewidth}{!}{
 \begin{tabular}{ccccccc}
 	\toprule
 		实验编号&固溶温度/℃ &处理时间/h & 冷却方法 & 时效温度/℃  &处理时间/h & 冷却方法 \\
 	\midrule
-	1 & 910 & 1 & WQ & 510 & 1 & AC \\
-	2 & 910 & 1 & FC & 590 & 2 & AC \\
-	3 & 910 & 1 & WQ & 550 & 3 & AC \\
-	4 & 950 & 1 & WQ & 590 & 3 & AC \\
-	5 & 950 & 1 & FC & 550 & 1 & AC \\
-	6 & 950 & 1 & WQ & 510 & 2 & AC \\
-	7 & 990 & 1 & WQ & 550 & 2 & AC \\
-	8 & 990 & 1 & FC & 510 & 3 & AC \\
-	9 & 990 & 1 & WQ & 590 & 1 & AC \\
+	1 & 910 & 1 & 水冷 & 510 & 1 & AC \\
+	2 & 910 & 1 & 油冷 & 590 & 1 & AC \\
+	3 & 910 & 1 & 水冷 & 550 & 1 & AC \\
+	4 & 950 & 1 & 水冷 & 590 & 1& AC \\
+	5 & 950 & 1 & 水冷 & 550 & 1& AC \\
+	6 & 950 & 1 & 油冷 & 510 & 1 & AC \\
+	7 & 990 & 1 & 水冷 & 550 & 1 & AC \\
+	8 & 990 & 1 & 油冷 & 510 & 1 & AC \\
+	9 & 990 & 1 & 水冷 & 590 & 1 & AC \\
 %	910 & 1 & $\mathrm{WQ}$ & 510 & 4 & $\mathrm{AC}$\\
 %	910 & 1 & $\mathrm{FC}$  & 510 & 4 & $\mathrm{AC}$ \\
 %	910 & 1 & $\mathrm{WQ}$ & 550 & 4 & $\mathrm{AC}$ \\
@@ -186,7 +235,7 @@
 经过正交实验方法设计的实验虽然节省了试验次数，但是不能兼顾直观性，因而我们需要专门的分析工具才能分析出来，不同变量之间的相关性。
 \\
 
-{\Huge \color{red} \textbf {待补充}}
+%{\Huge \color{red} \textbf {待补充}}
 
 \section{TC4钛合金的热处理方案实验过程}
 
@@ -240,8 +289,12 @@
 \begin{enumerate}
 	\item 设定好预定的温度梯度与加热时间。
 	\item 当温度到了预设值附近，戴好隔热手套，镊住式样，开炉门，快速准确放置好试样。
-	\item 保温了足够时间后，开炉门，迅速夹取处理后的试样，并放入准备好的对应淬火液中。
+	\item 保温了足够时间后，开炉门，迅速夹取处理后的试样，并放入准备好的对应淬火液中或冷却架上空冷。
 	\item 擦拭淬火后的试样，处理表面脱落，归类试样。
 \end{enumerate}
+经过固溶时效处理后的试样如图所示：
 
-\section{小结}
+
+
+%\section{小结}
+%在本节中，介绍了式样的参数与加工过程与热处理工艺的设计
