@@ -13,54 +13,6 @@
 		标准要求 &$ 5.5\sim 6.75 $ & $ 3.5\sim 4.5 $&$ \le 0.30 $ & $ \le 0.05 $&$ \le 0.20 $&$ \le 0.03$ &$ \le 0.015 $ \\ \bottomrule
 	\end{tabular}
 \end{table}
-
-$\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的热机械工艺和热处理工艺的重要依据，相变过程如\ref{sec:Tc4betachange}所示。郭凯\cite{guokaiTC4taihejinrechuligongyideyanjiuxianzhuangjijinzhan2021}等人表示：当固溶温度高于 $\beta$ 相变时的温度时，合金的强度伴随温度的增加而下降，而且残余应力也开始大幅度的降低；当固溶温度低于 $\beta$ 相变时的温度时，合金的强度伴随温度的增加而增加，残余应力也略微提高。但是徐戊矫、谭玉全\cite{xujianGurongshixiaogongyiduiTC4taihejinzuzhijixingnengdeyingxiang2014}却表明：在相变点以下，随着退火温度的升高，材料的 强度、塑性和冲击韧性呈降低趋势。之所以会出现这种完全相反的结论，很可能是研究者对于相变点的具体值定义不清晰导致的，可见相变点的确定在固溶处理过程中是非常关键的。
-
-近年来，确定$ \beta $相变点的常见计算方法\cite{zhuhongTaihejinaVxiangbiandiandejizhongceshifangfatantao2013}主要有：连续升温金相法、X 射线衍射法、电阻法、等热膨胀法、元素含量法和神经网络模型预测预测法\cite{renchiqiangGurongshixiaoduiTC4taihejinxianweizuzhihelixuexingnengdeyingxiang2022}等。
-\begin{table}[htbp]
-	\centering
-	\caption{\ti 合金$ \alpha+\beta \to \beta $转变时发生的相变及存在的相}
-	\label{sec:Tc4betachange}
-	\begin{tabular}{ccc}
-		\toprule 室温相 & 相变过程 & 高温相 \\
-		\midrule$\alpha-\mathrm{Ti}$ & $\alpha-T i \rightarrow \beta-T i$ & $\beta-\mathrm{Ti}$ \\
-		$\alpha-\mathrm{Ti}-\mathrm{Al}$ & $\alpha-\mathrm{Ti}-\mathrm{Al} \rightarrow \beta-\mathrm{Ti}+\beta-\mathrm{Ti}-\mathrm{Al}$ & $\beta-\mathrm{Ti}, \beta-\mathrm{Ti}-\mathrm{Al}$ \\
-		$\beta- \mathrm{Ti}-\mathrm{V}$ & $\beta-\mathrm{Ti}-\mathrm{V} \rightarrow \beta^{-} \mathrm{Ti}-\mathrm{V}$ & $\beta-\mathrm{Ti}-\mathrm{V}$ \\
-		\bottomrule
-	\end{tabular}
-\end{table}
-
-由于能力所限，本试验采用元素含量法来进行相变点的计算：根据合金中各元素对相变温度的影响来对相变点进行推算，通过\ref{sec:chem4ti}所示\cite{ananyaLocationBasedIntelligent2011}的因素，利用经验公式\ref{jingyan}来计算。
-\begin{equation}
-	T_\beta=885^{\circ} \mathrm{C}+\sum \text { 各元素含量 } \times \text { 各元素含量对 }(\alpha+\beta) / \beta \text { 相变点的影响 }
-	\label{jingyan}
-\end{equation}
-其中885℃为纯钛的相变点。
-\begin{table}[htbp]
-	\centering
-	\caption{部分元素含量对钛合金相变点的影响}
-	\label{sec:chem4ti}
-	\begin{tabular}{cccc}
-		\hline 元素名称 & 元素含量 $(\mathrm{Wt} \%)$ & 差值&累积值 \\
-		\hline $\mathrm{Al}$ & $2.0 \sim 7.0$ & 29+$23.0^{\circ} \mathrm{C} / 1.0 \%$ & $+123.76^{\circ} \mathrm{C}$ \\
-		$\mathrm{V}$ & $0 \sim 10.0$ & $-14.0^{\circ} \mathrm{C} / 1.0 \%$ & $-56.84^{\circ} \mathrm{C}$ \\
-		$\mathrm{Fe}$ & $0 \sim 15.0$ & $-16.5^{\circ} \mathrm{C} / 1.0 \%$ & $-2.145^{\circ} \mathrm{C}$
-		 \\
-		$\mathrm{C}$ & $0 \sim 0.15$ & $+2.0^{\circ} \mathrm{C} / 0.01 \%$ &$ +2.4^{\circ} \mathrm{C} $\\
-		$\mathrm{O}$ & $0 \sim 1.0$ & $+2.0^{\circ} \mathrm{C} / 0.01 \%$& $ +22.4^{\circ} \mathrm{C} $\\
-		$\mathrm{~N}$ & $0 \sim 0.5$ & $+5.5^{\circ} \mathrm{C} / 0.01 \%$& $ +4.95^{\circ} \mathrm{C} $\\
-		$\mathrm{H}$ & $0 \sim 0.50$ & $-5.5^{\circ} \mathrm{C} / 0.01 \%$ &$ -2.2^{\circ} \mathrm{C} $\\
-		总计&&&$ +92.325^{\circ} \mathrm{C} $\\
-		\hline
-	\end{tabular}
-\end{table}
-
-
-关于$\beta$转变温度的具体值，目前广泛认同的是位于975℃附近，但是由于不同试样的合金元素的种类与含量的差异，尤其是局部化学成分的差异，使得不同研究人员实际测得的相变点温度有所差异\cite{wangtaoTC4hejinxiangbianwendujiancezhongjieguobuyizhiyuanyinfenxi2013}。
-
-姚德人等\cite{yaoderenTc4taihejinxiangbiandiandeceding1975}表明相变温度为975℃到980℃之间，此时的合金拥有最低的硬度，当温度略大时会发生$\beta$晶粒的显著长大；相变点以下50℃以内水淬，可以得到不同数量的初生$ \alpha $和马氏体$ \alpha^{\prime} $，而后再进行低温退火时，马氏体$ \alpha^{\prime} $又会转变为稳定的次生$ \alpha$和$ \beta $，可以得到较好的综合性能\footnote{\color{red}此文章写于1975年，但是仍然非常有参考价值}。刘伟东等人\cite{liuweidongTC4hejinVzhuanbianwendudejinxiangfacedingyulilunjisuan2014}通过连续升温金相法，使用EET\footnote{Empirical Electron Theory of solids and molecules“固体与分子经验电子理论”(简称余氏理论)}模型建模测得了\ti 合金的相变温度为974.58℃；孙宇、曾卫东等人\cite{sunyuYingyongrengongshenjingwangluoyanjiuhuaxueyuansuduitaihejinxiangbiandiandeyingxiang2010}通过人工神经网络ANN技术，运用反向传播算法，建立了三层神经网路-钛合金相变预测模型，最终预测得到在绝对误差为9.8℃的情况下，TC4的相变点为994.8℃。
-
-本设计的试样通过计算法得到的相变点温度为$ 885+92.325=977.325^{\circ} \mathrm{C} $，可见还是比较符合现实情况的。
 \begin{table}[htbp]
 	\centering
 	\caption{试样的力学性能参数}
@@ -72,7 +24,6 @@ $\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的�
 		标准值 &$ \ge 895 $&$ \ge 830 $&$ \ge 10 $ \\ \bottomrule
 	\end{tabular}
 \end{table}
-
 
 为了节约成本，本设计选择了尺寸较小的试样来进行实验，整体尺寸为$ 25mm\times 7.5mm $的狗骨状片体，具体参数如\ref{fig:试样尺寸}所示：
 %3-28日上午，经过老师说明，由于试样为板材，加工成圆柱较为困难，故加工成二位平面的“狗骨头”
@@ -101,6 +52,65 @@ $\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的�
 	%	\end{minipage}
 %%	\caption{试样参数}
 %\end{figure}
+
+\subsection{$\beta$转变温度的计算}
+$\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的热机械工艺和热处理工艺的重要依据，相变过程如\ref{sec:Tc4betachange}所示。郭凯\cite{guokaiTC4taihejinrechuligongyideyanjiuxianzhuangjijinzhan2021}等人表示：当固溶温度高于 $\beta$ 相变时的温度时，合金的强度伴随温度的增加而下降，而且残余应力也开始大幅度的降低；当固溶温度低于 $\beta$ 相变时的温度时，合金的强度伴随温度的增加而增加，残余应力也略微提高。但是徐戊矫、谭玉全\cite{xujianGurongshixiaogongyiduiTC4taihejinzuzhijixingnengdeyingxiang2014}却表明：在相变点以下，随着退火温度的升高，材料的 强度、塑性和冲击韧性呈降低趋势。之所以会出现这种完全相反的结论，很可能是研究者对于相变点的具体值定义不清晰导致的，可见相变点的确定在固溶处理过程中是非常关键的。
+
+近年来，确定$ \beta $相变点的常见计算方法\cite{zhuhongTaihejinaVxiangbiandiandejizhongceshifangfatantao2013}主要有：连续升温金相法、X 射线衍射法、电阻法、等热膨胀法、元素含量法和神经网络模型预测预测法\cite{renchiqiangGurongshixiaoduiTC4taihejinxianweizuzhihelixuexingnengdeyingxiang2022}等。
+\begin{table}[htbp]
+	\centering
+	\caption{\ti 合金$ \alpha+\beta \to \beta $转变时发生的相变及存在的相}
+	\label{sec:Tc4betachange}
+	\begin{tabular}{ccc}
+		\toprule 室温相 & 相变过程 & 高温相 \\
+		\midrule$\alpha-\mathrm{Ti}$ & $\alpha-T i \rightarrow \beta-T i$ & $\beta-\mathrm{Ti}$ \\
+		$\alpha-\mathrm{Ti}-\mathrm{Al}$ & $\alpha-\mathrm{Ti}-\mathrm{Al} \rightarrow \beta-\mathrm{Ti}+\beta-\mathrm{Ti}-\mathrm{Al}$ & $\beta-\mathrm{Ti}, \beta-\mathrm{Ti}-\mathrm{Al}$ \\
+		$\beta- \mathrm{Ti}-\mathrm{V}$ & $\beta-\mathrm{Ti}-\mathrm{V} \rightarrow \beta^{-} \mathrm{Ti}-\mathrm{V}$ & $\beta-\mathrm{Ti}-\mathrm{V}$ \\
+		\bottomrule
+	\end{tabular}
+\end{table}
+
+由于能力所限，本试验采用元素含量法来进行相变点的计算：根据合金中各元素对相变温度的影响来对相变点进行推算，通过\ref{sec:chem4ti}所示\cite{ananyaLocationBasedIntelligent2011}的因素，利用经验公式来计算。
+\begin{equation}
+	T_\beta=885^{\circ} \mathrm{C}+\sum \text { 各元素含量 } \times \text { 各元素含量对 }(\alpha+\beta) / \beta \text { 相变点的影响 }
+	\label{jingyan}
+\end{equation}
+其中885℃为纯钛的相变点。
+\begin{table}[htbp]
+	\centering
+	\caption{部分元素含量对钛合金相变点的影响}
+	\label{sec:chem4ti}
+	\begin{tabular}{cccc}
+		\hline 元素名称 & 元素含量 $(\mathrm{Wt} \%)$ & 差值&累积值 \\
+		\hline $\mathrm{Al}$ & $2.0 \sim 7.0$ & 29+$23.0^{\circ} \mathrm{C} / 1.0 \%$ & $+123.76^{\circ} \mathrm{C}$ \\
+		$\mathrm{V}$ & $0 \sim 10.0$ & $-14.0^{\circ} \mathrm{C} / 1.0 \%$ & $-56.84^{\circ} \mathrm{C}$ \\
+		$\mathrm{Fe}$ & $0 \sim 15.0$ & $-16.5^{\circ} \mathrm{C} / 1.0 \%$ & $-2.145^{\circ} \mathrm{C}$
+		 \\
+		$\mathrm{C}$ & $0 \sim 0.15$ & $+2.0^{\circ} \mathrm{C} / 0.01 \%$ &$ +2.4^{\circ} \mathrm{C} $\\
+		$\mathrm{O}$ & $0 \sim 1.0$ & $+2.0^{\circ} \mathrm{C} / 0.01 \%$& $ +22.4^{\circ} \mathrm{C} $\\
+		$\mathrm{~N}$ & $0 \sim 0.5$ & $+5.5^{\circ} \mathrm{C} / 0.01 \%$& $ +4.95^{\circ} \mathrm{C} $\\
+		$\mathrm{H}$ & $0 \sim 0.50$ & $-5.5^{\circ} \mathrm{C} / 0.01 \%$ &$ -2.2^{\circ} \mathrm{C} $\\
+		\hline
+	\end{tabular}
+\end{table}
+
+
+关于$\beta$转变温度的具体值，目前广泛认同的是位于975℃附近，但是由于不同试样的合金元素的种类与含量的差异，尤其是局部化学成分的差异，使得不同研究人员实际测得的相变点温度有所差异\cite{wangtaoTC4hejinxiangbianwendujiancezhongjieguobuyizhiyuanyinfenxi2013}。
+
+姚德人等\cite{yaoderenTc4taihejinxiangbiandiandeceding1975}表明相变温度为975℃到980℃之间，此时的合金拥有最低的硬度，当温度略大时会发生$\beta$晶粒的显著长大；相变点以下50℃以内水淬，可以得到不同数量的初生$ \alpha $和马氏体$ \alpha^{\prime} $，而后再进行低温退火时，马氏体$ \alpha^{\prime} $又会转变为稳定的次生$ \alpha$和$ \beta $，可以得到较好的综合性能\footnote{\color{red}此文章写于1975年，但是仍然非常有参考价值}。刘伟东等人\cite{liuweidongTC4hejinVzhuanbianwendudejinxiangfacedingyulilunjisuan2014}通过连续升温金相法，使用EET\footnote{Empirical Electron Theory of solids and molecules“固体与分子经验电子理论”(简称余氏理论)}模型建模测得了\ti 合金的相变温度为974.58℃；孙宇、曾卫东等人\cite{sunyuYingyongrengongshenjingwangluoyanjiuhuaxueyuansuduitaihejinxiangbiandiandeyingxiang2010}通过人工神经网络ANN技术，运用反向传播算法，建立了三层神经网路-钛合金相变预测模型，最终预测得到在绝对误差为9.8℃的情况下，TC4的相变点为994.8℃。
+\begin{equation}
+\begin{aligned}
+T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_{C}+\delta_{O}+\delta_{N}+\delta_{H})\\
+&= 885^{\circ} \mathrm{C}+(123.76-56.84-2.145+2.4+22.4+4.95-2.2)^{\circ} \mathrm{C}\\
+&=885^{\circ} \mathrm{C}+92.325^{\circ} \mathrm{C}\\
+&=977.325^{\circ} \mathrm{C}
+\end{aligned}
+\end{equation}
+
+本设计的试样通过计算法得到的相变点温度为$977.325^{\circ} \mathrm{C} $，与广泛认同的相变点温度值相差$\delta=\frac{977.325-975}{975}=0.238\% $，可见还是比较符合现实情况的。
+
+
+
 \subsection{试样加工}
 本设计采用电火花线切割加工（Wire cut Electrical Discharge Machining，简称WEDM）的方法进行加工。在一开始只考虑了材料的利用率，就设计了如\ref{fig:badway}所示的密集排列。但是在实际加工的时候，却发现在这样的设计方式根本不可行——没有夹具的位置，且刀路比较长。
 
@@ -121,40 +131,22 @@ $\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的�
 	\label{fig:goodway}
 \end{figure}
 
-
-\section{TC4型钛合金的热处理工艺}
+\section{TC4钛合金的热处理方案设计}
+\subsection{TC4合金的热处理工艺性能}
 由~\ref{sec:1.1}可知，钛合金可以通过各种各样的相变过程来得到不同的组织结构。因而可以设计适宜的热处理工艺参数，来获得具有高强度的显微组织，由此实现\ti 合金力学性能和工艺性能的改善。\ti 合金热处理的一些特性如下：
 \begin{enumerate}
-%	\item 钛合金的热处理主要用于α+β型钛合金。因为对于纯α型钛合金而言，马氏体相变不会使钛合金的性能发生显著变化。只能依赖淬火形成的亚稳相（包括马氏体相）的时效分解来进行。
-%	\item 热处理应该避免形成ω相。形成ω相会使钛合金变脆，正确选择时效工艺（例如，采用较高的时效温度）即可使相分解。
-	\item α+β钛合金的淬透性差，淬火热应力大，淬火时零件易翘曲。由于导热性差，钛合金变形时易引起局部温升过高，使局部温度有可能超过β转变点而形成魏氏组织。
+	%	\item 钛合金的热处理主要用于$\alpha+\beta$型钛合金。因为对于纯α型钛合金而言，马氏体相变不会使钛合金的性能发生显著变化。只能依赖淬火形成的亚稳相（包括马氏体相）的时效分解来进行。
+	%	\item 热处理应该避免形成ω相。形成ω相会使钛合金变脆，正确选择时效工艺（例如，采用较高的时效温度）即可使相分解。
+	\item $\alpha+\beta$钛合金的淬透性差，淬火热应力大，淬火时零件易翘曲。由于导热性差，钛合金变形时易引起局部温升过高，使局部温度有可能超过$\beta$转变点而形成魏氏组织。
 	\item 化学性质活泼。热处理时，钛合金易与氧和水蒸气反应，在工件表面形成具有一定深度的富氧层或氧化皮，使合金的性能降低。同时钛合金热处理时容易吸氢，引起氢脆。
-	\item β转变点差异大。即使是同一成分，但由于冶炼炉次的不同，其β转变温度有时差别很大。
+	\item $\beta$转变点差异大。即使是同一成分，但由于冶炼炉次的不同，其$\beta$转变温度有时差别很大。
 \end{enumerate}
-
+\subsection{TC4合金热处理工艺设计}
 常见的\ti 钛合金热处理工艺有：退火、淬火(往往加上时效处理)、形变热处理等，不同的热处理方式得到的组织性能各异。
 
- 鲁媛媛,马保飞等人研究发现在时效温度为450、500和550℃时初生α相的含量随温度升高逐渐增加;而在时效温度为600℃和650℃条件下初生α相含量因高温溶解而明显减少, β相尺寸相应增大。当时效温度为550℃时, 所得钛合金的显微组织最佳\cite{luyuanyuanShixiaochuliduiTC4taihejinweiguanzuzhihelixuexingnengdeyingxiang2019}。刘婉颖、林元华等人通过实验发现：在960 ℃/1 h + WQ进行固溶处理和500 ℃/4 h + AC下进行时效处理得到的\ti 具有最佳的力学性能\cite{LiuWanYingBuTongReChuLiGongYiDuiTi6Al4VTaiHeJinWeiGuanJieGouHeLiXueXingNengYingXiangYingWen2017}；陈冠宇通过实验表明，在850℃进行退火处理时，在600℃进行时效处理可以使合金得到更好的耐腐蚀性能\cite{1200}；李宸宇证明\ti 合金在900℃空冷固溶两小时在530℃时效四小时后具有更好的强硬度，而且固溶后冷速越快，合金的强硬度越高、塑韧性越差\cite{900}。%第46页
+鲁媛媛,马保飞等人研究发现在时效温度为450℃、500℃和550℃时初生α相的含量随温度升高逐渐增加;而在时效温度为600℃和650℃条件下初生$\alpha$相含量因高温溶解而明显减少, $\beta$相尺寸相应增大。当时效温度为550℃时, 所得钛合金的显微组织最佳\cite{luyuanyuanShixiaochuliduiTC4taihejinweiguanzuzhihelixuexingnengdeyingxiang2019}。刘婉颖、林元华等人通过实验发现：在960 ℃/1 h + WQ进行固溶处理和500 ℃/4 h + AC下进行时效处理得到的\ti 具有最佳的力学性能\cite{LiuWanYingBuTongReChuLiGongYiDuiTi6Al4VTaiHeJinWeiGuanJieGouHeLiXueXingNengYingXiangYingWen2017}；陈冠宇通过实验表明，在850℃进行退火处理时，在600℃进行时效处理可以使合金得到更好的耐腐蚀性能\cite{1200}；李宸宇证明\ti 合金在900℃空冷固溶两小时在530℃时效四小时后具有更好的强硬度，而且固溶后冷速越快，合金的强硬度越高、塑韧性越差\cite{900}。%第46页
 
-
-%不同热处理作用如下：
-%\begin{enumerate}
-%	\item 退火：用于提高合金塑形、稳定组织。
-%	\item 淬火：用于强化组织，提高综合力学性能。
-%	\item 形变热处理：与压力加工结合起来，同时发挥相变强化和热处理强化的作用。
-%	\item 化学热强化：提高金属耐磨性，抗腐蚀性
-%\end{enumerate}
-
-%\subsection{热处理工艺对一般钛合金组织的影响}
-
-\section{TC4钛合金的热处理方案设计}
-对于α+β型的\ti 钛合金的固溶时效热处理工艺而言，其主要影响参数为温度和时间。在研读了一些前人的研究报告\cite{mirror1}\cite{ranxingGurongwenduduiTi6Al4VELItaihejinxianweizuzhijixingnengdeyingxiang2021}之后，初步确定了固溶处理的最佳工艺制度为$ \beta $相变点以下30℃左右（这里取整数$ 947.325\simeq950^{\circ} \mathrm{C} $）处理一个小时、时效温度在450℃左右处理一个小时。于是本设计首先确定了如下三个变量：固溶温度、固溶方式、时效温度。
-\subsection{正交实验设计}
-用正交实验代替传统的控制变量法来提高实验效率、材料利用率。传统的控制变量法在面对低因素、低水平的实验时可以设计出很清晰直观的实验，但是面对多因素（变量）、多水平的实验时，控制变量法就显得极为繁琐了。比如一个含有三个变量，每个变量有三个水平的实验就需要$ 3\times 3 \times 3=27$次实验，为了直观性而牺牲大量的成本、同时包含了太多无关的对照组，这样的实验设计在很大程度上是不符合可持续发展理念的，是在浪费资源。但好在有另外一种方法可以解决问题——正交试验设计法(Orthogonal experimental design)。
-
-正交实验设计是研究多因素多水平的又一种设计方法，它是根据正交性从全面试验中挑选出部分有代表性的点进行试验，这些有代表性的点具备了“均匀分散，齐整可比”的特点\cite{wangxueshen}。当实验次数太多时，根据正交实验设计，实验者可以选择一部分有代表性水平组合进行试验。 例如前面说的三因素三水平的实验，若按$ L9(3^4) $正交表安排实验，只需作9次，按$ L15(3^7) $正交表进行15次实验，显然大大减少了工作量。
-
-在没有通过正交实验设计之前，笔者的实验是如\ref{sec:first}这样设置的：
+总之，对于$\alpha+\beta$型的\ti 钛合金的固溶时效热处理工艺而言，其主要影响参数为温度和时间\cite{mirror1,ranxingGurongwenduduiTi6Al4VELItaihejinxianweizuzhijixingnengdeyingxiang2021}。根据初步预测确定了固溶处理的最佳工艺制度为$ \beta $相变点以下30℃左右（这里取整数$ 977.325-30=947.325\approx950^{\circ} \mathrm{C} $）处理一个小时、时效温度在450℃左右处理一个小时。于是本设计设置了如下三个变量：固溶温度、固溶方式、时效温度。根据控制变量法，设计了如\ref{sec:first}所示的18组热处理实验：
 \begin{table}[htbp]
 	\centering
 	\caption{\ti 原本的热处理制度设计}
@@ -163,31 +155,39 @@ $\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的�
 		\toprule
 		固溶温度/℃ &处理时间/h & 冷却方法 & 时效温度/℃  &处理时间/h & 冷却方法 \\
 		\midrule
-			910 & 1 & $\mathrm{WQ}$ & 510 & 4 & $\mathrm{AC}$\\
-			910 & 1 & $\mathrm{FC}$  & 510 & 4 & $\mathrm{AC}$ \\
-			910 & 1 & $\mathrm{WQ}$ & 550 & 4 & $\mathrm{AC}$ \\
-			910 & 1 & $\mathrm{FC}$  & 550 & 4 & $\mathrm{AC}$ \\
-			910 & 1 & $\mathrm{WQ}$ & 590 & 4 & $\mathrm{AC}$ \\
-			910 & 1 & $\mathrm{FC}$  & 590 & 4 & $\mathrm{AC}$ \\
-			\midrule
-			950 & 1 & $\mathrm{WQ}$ & 510 & 4 & $\mathrm{AC}$ \\
-			950 & 1 & $\mathrm{FC}$ & 510 & 4 & $\mathrm{AC}$ \\
-			950 & 1 & $\mathrm{WQ}$ & 550 & 4 & $\mathrm{AC}$ \\
-			950 & 1 & $\mathrm{FC}$ & 550 & 4 & $\mathrm{AC}$ \\
-			950 & 1 & $\mathrm{WQ}$ & 590 & 4 & $\mathrm{AC}$ \\
-			950 & 1 & $\mathrm{FC}$ & 590 & 4 & $\mathrm{AC}$ \\
-			\midrule
-			990 & 1 & $\mathrm{WQ}$ & 510 & 4 & $\mathrm{AC}$ \\
-			990 & 1 & $\mathrm{FC}$ & 510 & 4 & $\mathrm{AC}$ \\
-			990 & 1 & $\mathrm{WQ}$ & 550 & 4 & $\mathrm{AC}$ \\
-			990 & 1 & $\mathrm{FC}$ & 550 & 4 & $\mathrm{AC}$ \\
-			990 & 1 & $\mathrm{WQ}$ & 590 & 4 & $\mathrm{AC}$ \\
-			990 & 1 & $\mathrm{FC}$ & 590 & 4 & $\mathrm{AC}$ \\
+		910 & 1 & $\mathrm{WQ}$ & 510 & 4 & $\mathrm{AC}$\\
+		910 & 1 & $\mathrm{FC}$  & 510 & 4 & $\mathrm{AC}$ \\
+		910 & 1 & $\mathrm{WQ}$ & 550 & 4 & $\mathrm{AC}$ \\
+		910 & 1 & $\mathrm{FC}$  & 550 & 4 & $\mathrm{AC}$ \\
+		910 & 1 & $\mathrm{WQ}$ & 590 & 4 & $\mathrm{AC}$ \\
+		910 & 1 & $\mathrm{FC}$  & 590 & 4 & $\mathrm{AC}$ \\
+		\midrule
+		950 & 1 & $\mathrm{WQ}$ & 510 & 4 & $\mathrm{AC}$ \\
+		950 & 1 & $\mathrm{FC}$ & 510 & 4 & $\mathrm{AC}$ \\
+		950 & 1 & $\mathrm{WQ}$ & 550 & 4 & $\mathrm{AC}$ \\
+		950 & 1 & $\mathrm{FC}$ & 550 & 4 & $\mathrm{AC}$ \\
+		950 & 1 & $\mathrm{WQ}$ & 590 & 4 & $\mathrm{AC}$ \\
+		950 & 1 & $\mathrm{FC}$ & 590 & 4 & $\mathrm{AC}$ \\
+		\midrule
+		990 & 1 & $\mathrm{WQ}$ & 510 & 4 & $\mathrm{AC}$ \\
+		990 & 1 & $\mathrm{FC}$ & 510 & 4 & $\mathrm{AC}$ \\
+		990 & 1 & $\mathrm{WQ}$ & 550 & 4 & $\mathrm{AC}$ \\
+		990 & 1 & $\mathrm{FC}$ & 550 & 4 & $\mathrm{AC}$ \\
+		990 & 1 & $\mathrm{WQ}$ & 590 & 4 & $\mathrm{AC}$ \\
+		990 & 1 & $\mathrm{FC}$ & 590 & 4 & $\mathrm{AC}$ \\
 		\bottomrule
 	\end{tabular}
 \end{table}
 
-从\ref{sec:first}可见，如果按照控制变量法设计实验，则至少需要$3\times2\times3  =18$次实验，才能穷举完所有变量各个水平之间的关系。为了给子孙后代留下天蓝、地绿、水清的美丽家园，本实验高举可持续发展理念伟大旗帜，并结合正交实验方法$\color{teal} L9.3.4 $对实验进行了优化。最终的热处理制度如下表所示\footnote{其中WQ表示水冷、FC表示炉冷、AC表示空冷。}
+
+\subsection{正交实验设计}
+尽管控制变量法在实验设计中常被使用，但其也存在限制，尤其是多个因素交互作用的影响时，就需要设计很多次的实验。然而，一种新的实验设计方法——“正交实验法”则可以用更少的试验次数来研究多个变量之间的关系。
+
+正交实验设计是研究多因素多水平的又一种设计方法，它是根据正交性从全面试验中挑选出部分有代表性的点进行试验，这些有代表性的点具备了“均匀分散，齐整可比”的特点\cite{wangxueshen}。当实验次数太多时，根据正交实验设计，实验者可以选择一部分有代表性水平组合进行试验。 例如前面说的三因素三水平的实验，若按$ L9(3^4) $正交表安排实验，只需作9次，按$ L15(3^7) $正交表进行15次实验，显然大大减少了工作量。
+
+用正交实验代替传统的控制变量法来提高实验效率、材料利用率。传统的控制变量法在面对低因素、低水平的实验时可以设计出很清晰直观的实验，但是面对多因素（变量）、多水平的实验时，控制变量法就显得极为繁琐了。比如一个含有三个变量，每个变量有三个水平的实验就需要$ 3\times 3 \times 3=27$次实验，为了直观性而牺牲大量的成本、同时包含了太多无关的对照组，这样的实验设计在很大程度上是不符合可持续发展理念的，是在浪费资源。但好在有另外一种方法可以解决问题——正交试验设计法(Orthogonal experimental design)。
+
+在没有通过正交实验设计之前，笔者的实验是如\ref{sec:first}这样设置的，至少需要$3\times2\times3  =18$次实验，才能穷举完所有变量各个水平之间的关系。为了给子孙后代留下天蓝、地绿、水清的美丽家园，本实验高举可持续发展理念伟大旗帜，并结合正交实验方法$\color{teal} L9.3.4 $对实验进行了优化。最终的热处理制度如下表所示\footnote{其中WQ表示水冷、FC表示炉冷、AC表示空冷。}
 \begin{table}[htbp]
 	\centering
 	\caption{\ti 改进后的热处理制度}
@@ -231,8 +231,8 @@ $\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的�
 }
 \end{table}
 
-\subsection{正交实验分析方法}
-经过正交实验方法设计的实验虽然节省了试验次数，但是不能兼顾直观性，因而需要专门的分析工具才能分析出来，不同变量之间的相关性，故本实验采用spssau提供的数据分析工具来对三因素影响结果进行分析。
+%\subsection{正交实验分析方法}
+%经过正交实验方法设计的实验虽然节省了试验次数，但是不能兼顾直观性，因而需要专门的分析工具才能分析出来，不同变量之间的相关性，故本实验采用spssau提供的数据分析工具来对三因素影响结果进行分析。
 
 %{\Huge \color{red} \textbf {待补充}}
 
@@ -265,7 +265,7 @@ $\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的�
 
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{pic/马弗炉}
+	\includegraphics[width=0.6\linewidth]{pic/马弗炉}
 	\caption{马弗炉外形}
 	\label{fig: mymuffle}
 \end{figure}
