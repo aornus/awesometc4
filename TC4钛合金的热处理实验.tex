@@ -1,4 +1,4 @@
-\chapter{试样材料及研究方法}
+\chapter{试样加工及研究方法设计}
 \section{材料属性与试样加工过程}
 \subsection{实验材料属性}
 本实验用的是真空自耗两次熔炼所得的钛合金板，其化学成分参数与室温（20℃）力学性能参数如\ref{sec:mytc4chem}与\ref{sec:mytc4machin}所示：
@@ -24,16 +24,6 @@
 		标准值 &$ \ge 895 $&$ \ge 830 $&$ \ge 10 $ \\ \bottomrule
 	\end{tabular}
 \end{table}
-
-为了节约成本，本设计选择了尺寸较小的试样来进行实验，整体尺寸为$ 25mm\times 7.5mm $的狗骨状片体，具体参数如\ref{fig:试样尺寸}所示：
-%3-28日上午，经过老师说明，由于试样为板材，加工成圆柱较为困难，故加工成二位平面的“狗骨头”
-
-\begin{figure}[h!]
-	\centering
-	\includegraphics[width=0.99\linewidth]{pic/试样}
-	\caption{试样的尺寸参数}
-	\label{fig:试样尺寸}
-\end{figure}
 
 %
 %\begin{figure}[!htbp]
@@ -72,7 +62,7 @@ $\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的�
 
 由于能力所限，本试验采用元素含量法来进行相变点的计算：根据合金中各元素对相变温度的影响来对相变点进行推算，通过\ref{sec:chem4ti}所示\cite{ananyaLocationBasedIntelligent2011}的因素，利用经验公式来计算。
 \begin{equation}
-	T_\beta=885^{\circ} \mathrm{C}+\sum \text { 各元素含量 } \times \text { 各元素含量对 }(\alpha+\beta) / \beta \text { 相变点的影响 }
+	T_\beta=885^{\circ} \mathrm{C}+\sum \textit{ 各元素含量 } \times \textit{ 各元素含量对 }(\alpha+\beta) / \beta \textit{ 相变点的影响 }
 	\label{jingyan}
 \end{equation}
 其中885℃为纯钛的相变点。
@@ -97,7 +87,7 @@ $\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的�
 
 关于$\beta$转变温度的具体值，目前广泛认同的是位于975℃附近，但是由于不同试样的合金元素的种类与含量的差异，尤其是局部化学成分的差异，使得不同研究人员实际测得的相变点温度有所差异\cite{wangtaoTC4hejinxiangbianwendujiancezhongjieguobuyizhiyuanyinfenxi2013}。
 
-姚德人等\cite{yaoderenTc4taihejinxiangbiandiandeceding1975}表明相变温度为975℃到980℃之间，此时的合金拥有最低的硬度，当温度略大时会发生$\beta$晶粒的显著长大；相变点以下50℃以内水淬，可以得到不同数量的初生$ \alpha $和马氏体$ \alpha^{\prime} $，而后再进行低温退火时，马氏体$ \alpha^{\prime} $又会转变为稳定的次生$ \alpha$和$ \beta $，可以得到较好的综合性能\footnote{\color{red}此文章写于1975年，但是仍然非常有参考价值}。刘伟东等人\cite{liuweidongTC4hejinVzhuanbianwendudejinxiangfacedingyulilunjisuan2014}通过连续升温金相法，使用EET\footnote{Empirical Electron Theory of solids and molecules“固体与分子经验电子理论”(简称余氏理论)}模型建模测得了\ti 合金的相变温度为974.58℃；孙宇、曾卫东等人\cite{sunyuYingyongrengongshenjingwangluoyanjiuhuaxueyuansuduitaihejinxiangbiandiandeyingxiang2010}通过人工神经网络ANN技术，运用反向传播算法，建立了三层神经网路-钛合金相变预测模型，最终预测得到在绝对误差为9.8℃的情况下，TC4的相变点为994.8℃。
+姚德人等\cite{yaoderenTc4taihejinxiangbiandiandeceding1975}表明相变温度为975℃到980℃之间，此时的合金拥有最低的硬度，当温度略大时会发生$\beta$晶粒的显著长大；相变点以下50℃以内水淬，可以得到不同数量的初生$ \alpha $和马氏体$ \alpha^{\prime} $，而后再进行低温退火时，马氏体$ \alpha^{\prime} $又会转变为稳定的次生$ \alpha$和$ \beta $，可以得到较好的综合性能\footnote{\color{black}此文章写于1975年，但是仍然非常有参考价值}。刘伟东等人\cite{liuweidongTC4hejinVzhuanbianwendudejinxiangfacedingyulilunjisuan2014}通过连续升温金相法，使用EET\footnote{Empirical Electron Theory of solids and molecules“固体与分子经验电子理论”(简称余氏理论)}模型建模测得了\ti 合金的相变温度为974.58℃；孙宇、曾卫东等人\cite{sunyuYingyongrengongshenjingwangluoyanjiuhuaxueyuansuduitaihejinxiangbiandiandeyingxiang2010}通过人工神经网络ANN技术，运用反向传播算法，建立了三层神经网路-钛合金相变预测模型，最终预测得到在绝对误差为9.8℃的情况下，TC4的相变点为994.8℃。
 \begin{equation}
 \begin{aligned}
 T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_{C}+\delta_{O}+\delta_{N}+\delta_{H})\\
@@ -110,10 +100,8 @@ T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_
 本设计的试样通过计算法得到的相变点温度为$977.325^{\circ} \mathrm{C} $，与广泛认同的相变点温度值相差$\delta=\frac{977.325-975}{975}=0.238\% $，可见还是比较符合现实情况的。
 
 
-
 \subsection{试样加工}
 本设计采用电火花线切割加工（Wire cut Electrical Discharge Machining，简称WEDM）的方法进行加工。在一开始只考虑了材料的利用率，就设计了如\ref{fig:badway}所示的密集排列。但是在实际加工的时候，却发现在这样的设计方式根本不可行——没有夹具的位置，且刀路比较长。
-
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{pic/刀路初步}
@@ -121,14 +109,18 @@ T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_
 	\label{fig:badway}
 \end{figure}
 
-
-在仔细考虑了加工方法、设备特点、加工成本等因素后，在工程训练中心张冠老师的协助下，将加工方式改进成了：先把大板切割成八个小板，再把小板叠在一起进行加工。的方法，最终切割出来了$ 7\times 8=56 $个试样。
-% TODO: \usepackage{graphicx} required
+在仔细考虑了加工方法、设备特点、加工成本等因素后，在工程训练中心张冠老师的协助下，将加工方式改进成了：先把大板切割成八个小板，再把小板叠在一起进行加工的方法，最终切割出来了$ 7\times 8=56 $个试样。
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{pic/堆叠式切割}
-	\caption{堆叠式切割}
-	\label{fig:goodway}
+	\subfigure[堆叠式切割]{
+		\label{fig:goodway}
+		\includegraphics[width=0.4\linewidth]{pic/堆叠式切割}}
+	\hspace{0.2in} % 两图片之间的距离
+	\subfigure[切割结果]{
+	\centering
+		\label{fig:mytc4bone}
+		\includegraphics[width=0.45\linewidth]{pic/切割后的试样}}
+		\caption{切割方法与切割结果}
 \end{figure}
 
 \section{TC4钛合金的热处理方案设计}
@@ -180,14 +172,14 @@ T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_
 \end{table}
 
 
-\subsection{正交实验设计}
-尽管控制变量法在实验设计中常被使用，但其也存在限制，尤其是多个因素交互作用的影响时，就需要设计很多次的实验。然而，一种新的实验设计方法——“正交实验法”则可以用更少的试验次数来研究多个变量之间的关系。
+\subsection{优化实验设计}
+控制变量法是科学实验中最常使用的方法，在面对低因素、低水平的实验时可以设计出很清晰直观的实验。但其也存在巨大的缺点，尤其是多个因素交互作用的影响，面对多因素（变量）、多水平的实验时，就需要设计很多次的实验，显得极为繁琐。比如一个含有三个变量，每个变量有三个水平的实验就需要$ 3\times 3 \times 3=27$次实验，为了直观性而牺牲大量的成本、同时包含了太多无关的对照组，这样的实验设计在很大程度上是不符合可持续发展理念的，是在浪费资源。但好在有另外一种方法可以解决问题——正交试验设计法(Orthogonal experimental design)。
 
-正交实验设计是研究多因素多水平的又一种设计方法，它是根据正交性从全面试验中挑选出部分有代表性的点进行试验，这些有代表性的点具备了“均匀分散，齐整可比”的特点\cite{wangxueshen}。当实验次数太多时，根据正交实验设计，实验者可以选择一部分有代表性水平组合进行试验。 例如前面说的三因素三水平的实验，若按$ L9(3^4) $正交表安排实验，只需作9次，按$ L15(3^7) $正交表进行15次实验，显然大大减少了工作量。
+正交实验设计是研究多因素多水平的又一种设计方法，可以用更少的试验次数来研究多个变量之间的关系。它是根据正交性从全面试验中挑选出部分有代表性的点进行试验，这些有代表性的点具备了“均匀分散，齐整可比”的特点\cite{wangxueshen}。当实验次数太多时，根据正交实验设计，实验者可以选择一部分有代表性水平组合进行试验。 例如前面说的三因素三水平的实验，若按$ L9(3^4) $正交表安排实验，只需作9次，按$ L15(3^7) $正交表进行15次实验，就可以大大减少试验次数，提高实验效率、材料利用率。
 
-用正交实验代替传统的控制变量法来提高实验效率、材料利用率。传统的控制变量法在面对低因素、低水平的实验时可以设计出很清晰直观的实验，但是面对多因素（变量）、多水平的实验时，控制变量法就显得极为繁琐了。比如一个含有三个变量，每个变量有三个水平的实验就需要$ 3\times 3 \times 3=27$次实验，为了直观性而牺牲大量的成本、同时包含了太多无关的对照组，这样的实验设计在很大程度上是不符合可持续发展理念的，是在浪费资源。但好在有另外一种方法可以解决问题——正交试验设计法(Orthogonal experimental design)。
 
-在没有通过正交实验设计之前，笔者的实验是如\ref{sec:first}这样设置的，至少需要$3\times2\times3  =18$次实验，才能穷举完所有变量各个水平之间的关系。为了给子孙后代留下天蓝、地绿、水清的美丽家园，本实验高举可持续发展理念伟大旗帜，并结合正交实验方法$\color{teal} L9.3.4 $对实验进行了优化。最终的热处理制度如下表所示\footnote{其中WQ表示水冷、FC表示炉冷、AC表示空冷。}
+在没有通过正交实验设计优化之前，笔者的实验是如\ref{sec:first}所示，需要做$3\times2\times3  =18$次实验。但为了给子孙后代留下天蓝、地绿、水清的美丽家园，本实验高举可持续发展理念伟大旗帜，结合了正交实验方法$\color{black} L9.3.4 $对实验进行了优化。\\
+最终的热处理制度如下表所示：%\footnote{其中WQ表示水冷、FC表示炉冷、AC表示空冷。}
 \begin{table}[htbp]
 	\centering
 	\caption{\ti 改进后的热处理制度}
@@ -237,7 +229,13 @@ T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_
 %{\Huge \color{red} \textbf {待补充}}
 
 \section{TC4钛合金的热处理方案实验过程}
-按照\ref{sec:myHT}设置好的工艺，本实验分先后两次进行热处理：先进行固溶处理，随后进行时效处理。
+按照\ref{sec:myHT}设置好的工艺，本实验分先后两次进行热处理：先进行固溶处理，随后进行时效处理，方案路线如\ref{fig: heatway}所示。
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{pic/处理路线}
+	\caption{固溶-时效热处理试验路线}
+	\label{fig: heatway}
+\end{figure}
 \subsection{实验设备}
 本次设计热处理实验所用的设备为\text{\color{teal}JC-MF12-30}型箱式电阻炉，外观如\ref{fig: mymuffle}所示，设备规格如\ref{sec:mymuffle}所示：
 
@@ -288,15 +286,25 @@ T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_
 \begin{enumerate}
 	\item 设备与试样准备：把样品用去离子水等清洗干净，确保表面干净无杂质，无水分。准备陶瓷样品架，以便样品可以均匀加热。准备好后，将热处理炉预热至900℃左右，并保持稳定。
 	\item 样品装入：将切好的样品用放置在样品架上，不要使样品直接接触炉子底部或顶部，以免影响加热效果。并确保样品间距均匀，并记录好摆放顺序。
-	\item 加热过程控制：将样品架或钛合金网放入炉中，启动加热程序。根据实验要求，控制加热速率、温度和保温时间等参数（这里分三批次进行加热）。
+	\item 加热过程控制：将样品架或钛合金网放入炉中，启动加热程序。根据实验要求，控制加热速率、温度和保温时间等参数（这里分三批次\textbf{910-950-990}，每批次六个试样进行处理）。
 	\item 保温时间控制：加热到设计的温度后后，让试样保温一段时间，使其完全进入固溶状态。保持加热系统稳定，避免温度波动。
-	\item 停止加热：当固溶处理时间到达后，停止加热并关闭加热系统。
-	\item 水淬或空冷：将处理后的样品快速分别浸入水中、淬火油中进行淬火。
+	\item 停止加热：当固溶处理时间{\footnote{由于试样过小，老师建议加热10分钟，这样既可以节约时间，也可达到其他实验者粗大试样一个小时的效果}}到达后，停止加热并关闭加热系统，取出处理好的试样。
+	\item 水淬或油淬：将处理后的样品快速分别浸入水中、淬火油中进行淬火（每批次四个水淬，两个油淬）。
 	\item 后处理：取出样品进行干燥、清洗、归类，并记录初步记录数据。
 \end{enumerate}
 经过固溶时效处理后的试样如图所示：
 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\linewidth]{pic/固溶处理后的试样}
+	\caption{固溶处理后的试样}
+	\label{fig: aftergurong}
+\end{figure}
 
+\subsection{时效处理实验过程}
+时效处理过程温度稍低，为\textbf{510-550-590}三个温度，冷却方式为空冷，具体步骤与固溶处理相同，在此不做赘述。
+
+处理后，使用砂纸将表面氧化层打磨干净，根据试样所处的不同工艺路线，将各个试样分组归类。
 
 %\section{小结}
 %在本节中，介绍了式样的参数与加工过程与热处理工艺的设计
