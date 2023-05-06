@@ -44,9 +44,8 @@
 %\end{figure}
 
 \subsection{$\beta$转变温度的计算}
-$\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的热机械工艺和热处理工艺的重要依据，相变过程如\ref{sec:Tc4betachange}所示。郭凯\cite{guokaiTC4taihejinrechuligongyideyanjiuxianzhuangjijinzhan2021}等人表示：当固溶温度高于 $\beta$ 相变时的温度时，合金的强度伴随温度的增加而下降，而且残余应力也开始大幅度的降低；当固溶温度低于 $\beta$ 相变时的温度时，合金的强度伴随温度的增加而增加，残余应力也略微提高。但是徐戊矫、谭玉全\cite{xujianGurongshixiaogongyiduiTC4taihejinzuzhijixingnengdeyingxiang2014}却表明：在相变点以下，随着退火温度的升高，材料的 强度、塑性和冲击韧性呈降低趋势。之所以会出现这种完全相反的结论，很可能是研究者对于相变点的具体值定义不清晰导致的，可见相变点的确定在固溶处理过程中是非常关键的。
+$\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的热机械工艺和热处理工艺的重要依据，相变过程如\ref{sec:Tc4betachange}所示。
 
-近年来，确定$ \beta $相变点的常见计算方法\cite{zhuhongTaihejinaVxiangbiandiandejizhongceshifangfatantao2013}主要有：连续升温金相法、X 射线衍射法、电阻法、等热膨胀法、元素含量法和神经网络模型预测预测法\cite{renchiqiangGurongshixiaoduiTC4taihejinxianweizuzhihelixuexingnengdeyingxiang2022}等。
 \begin{table}[htbp]
 	\centering
 	\caption{\ti 合金$ \alpha+\beta \to \beta $转变时发生的相变及存在的相}
@@ -60,12 +59,19 @@ $\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的�
 	\end{tabular}
 \end{table}
 
-由于能力所限，本试验采用元素含量法来进行相变点的计算：根据合金中各元素对相变温度的影响来对相变点进行推算，通过\ref{sec:chem4ti}所示\cite{ananyaLocationBasedIntelligent2011}的因素，利用经验公式来计算。
+$\beta$转变温度于TC4合金组织转变的关系非常密切，对于TC4合金热处理工艺的设计至关重要。郭凯\cite{guokaiTC4taihejinrechuligongyideyanjiuxianzhuangjijinzhan2021}等人表示：当固溶温度高于 $\beta$ 相变时的温度时，合金的强度伴随温度的增加而下降，而且残余应力也开始大幅度的降低；当固溶温度在相变点以下时，合金的强度伴随温度的增加而增加。但是徐戊矫、谭玉全\cite{xujianGurongshixiaogongyiduiTC4taihejinzuzhijixingnengdeyingxiang2014}却表明：在相变点以下，随着退火温度的升高，材料的 强度、塑性和冲击韧性呈降低趋势。之所以会出现这种完全相反的结论，很可能是研究者对于相变点的具体值定义不清晰导致的，可见相变点的确定在固溶处理过程中是非常关键的。
+
+
+关于$\beta$转变温度的具体值，目前广泛认同的是位于975℃附近，但是由于不同试样的合金元素的种类与含量的差异，尤其是局部化学成分的差异，使得不同研究人员实际测得的相变点温度有所差异\cite{wangtaoTC4hejinxiangbianwendujiancezhongjieguobuyizhiyuanyinfenxi2013}。姚德人等\cite{yaoderenTc4taihejinxiangbiandiandeceding1975}表明相变温度为975℃到980℃之间，此时的合金拥有最低的硬度，当温度略大时会发生$\beta$晶粒的显著长大；相变点以下50℃以内水淬，可以得到不同数量的初生$ \alpha $和马氏体$ \alpha^{\prime} $，而后再进行低温退火时，马氏体$ \alpha^{\prime} $又会转变为稳定的次生$ \alpha$和$ \beta $，可以得到较好的综合性能\footnote{\color{black}此文章写于1975年，但是仍然非常有参考价值}。刘伟东等人\cite{liuweidongTC4hejinVzhuanbianwendudejinxiangfacedingyulilunjisuan2014}通过连续升温金相法，使用EET\footnote{Empirical Electron Theory of solids and molecules“固体与分子经验电子理论”(简称余氏理论)}模型建模测得了\ti 合金的相变温度为974.58℃；孙宇、曾卫东等人\cite{sunyuYingyongrengongshenjingwangluoyanjiuhuaxueyuansuduitaihejinxiangbiandiandeyingxiang2010}通过人工神经网络ANN技术，运用反向传播算法，建立了三层神经网路-钛合金相变预测模型，最终预测得到在绝对误差为9.8℃的情况下，TC4的相变点为994.8℃。
+
+近年来，确定$ \beta $相变点的常见计算方法\cite{zhuhongTaihejinaVxiangbiandiandejizhongceshifangfatantao2013}主要有：连续升温金相法、X 射线衍射法、电阻法、等热膨胀法、元素含量法和神经网络模型预测预测法\cite{renchiqiangGurongshixiaoduiTC4taihejinxianweizuzhihelixuexingnengdeyingxiang2022}等。其中元素含量法是最为常用的方法，简单且准确。该方法根据合金中各元素对相变温度的影响\cite{ananyaLocationBasedIntelligent2011}利用经验公式\ref{jingyan}来对相变点进行推算:
 \begin{equation}
 	T_\beta=885^{\circ} \mathrm{C}+\sum \textit{ 各元素含量 } \times \textit{ 各元素含量对 }(\alpha+\beta) / \beta \textit{ 相变点的影响 }
 	\label{jingyan}
 \end{equation}
 其中885℃为纯钛的相变点。
+
+故本设计采用元素含量法来对实验材料的$\beta$转变温度进行推算，元素含量如上\ref{sec:mytc4chem}所示，不同元素对于相变点温度的影响如\ref{sec:chem4ti}所示：
 \begin{table}[htbp]
 	\centering
 	\caption{部分元素含量对钛合金相变点的影响}
@@ -84,10 +90,6 @@ $\beta$转变温度是钛合金的重要参数之一，它是制定钛合金的�
 	\end{tabular}
 \end{table}
 
-
-关于$\beta$转变温度的具体值，目前广泛认同的是位于975℃附近，但是由于不同试样的合金元素的种类与含量的差异，尤其是局部化学成分的差异，使得不同研究人员实际测得的相变点温度有所差异\cite{wangtaoTC4hejinxiangbianwendujiancezhongjieguobuyizhiyuanyinfenxi2013}。
-
-姚德人等\cite{yaoderenTc4taihejinxiangbiandiandeceding1975}表明相变温度为975℃到980℃之间，此时的合金拥有最低的硬度，当温度略大时会发生$\beta$晶粒的显著长大；相变点以下50℃以内水淬，可以得到不同数量的初生$ \alpha $和马氏体$ \alpha^{\prime} $，而后再进行低温退火时，马氏体$ \alpha^{\prime} $又会转变为稳定的次生$ \alpha$和$ \beta $，可以得到较好的综合性能\footnote{\color{black}此文章写于1975年，但是仍然非常有参考价值}。刘伟东等人\cite{liuweidongTC4hejinVzhuanbianwendudejinxiangfacedingyulilunjisuan2014}通过连续升温金相法，使用EET\footnote{Empirical Electron Theory of solids and molecules“固体与分子经验电子理论”(简称余氏理论)}模型建模测得了\ti 合金的相变温度为974.58℃；孙宇、曾卫东等人\cite{sunyuYingyongrengongshenjingwangluoyanjiuhuaxueyuansuduitaihejinxiangbiandiandeyingxiang2010}通过人工神经网络ANN技术，运用反向传播算法，建立了三层神经网路-钛合金相变预测模型，最终预测得到在绝对误差为9.8℃的情况下，TC4的相变点为994.8℃。
 \begin{equation}
 \begin{aligned}
 T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_{C}+\delta_{O}+\delta_{N}+\delta_{H})\\
@@ -97,11 +99,23 @@ T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_
 \end{aligned}
 \end{equation}
 
-本设计的试样通过计算法得到的相变点温度为$977.325^{\circ} \mathrm{C} $，与广泛认同的相变点温度值相差$\delta=\frac{977.325-975}{975}=0.238\% $，可见还是比较符合现实情况的。
+最终通过计算法得到的相变点温度为$977.325^{\circ} \mathrm{C} $，与广泛认同的相变点温度值相差$\delta=\frac{977.325-975}{975}=0.238\% $，可见还是比较符合现实情况的，故本实验选择此温度作为热处理实验的基准温度。
 
 
-\subsection{试样加工}
-本设计采用电火花线切割加工（Wire cut Electrical Discharge Machining，简称WEDM）的方法进行加工。在一开始只考虑了材料的利用率，就设计了如\ref{fig:badway}所示的密集排列。但是在实际加工的时候，却发现在这样的设计方式根本不可行——没有夹具的位置，且刀路比较长。
+\subsection{试样设计与加工}
+本设计选择了尺寸较小的试样来进行实验：整体尺寸为$ 25mm\times 7.5mm $，厚度为1.3mm，呈现为两端略大，中间平行的骨头状。该类型的小件试样不仅可以节约材料，特殊的形状也便于进行后续的力学拉伸试验，满足实验要求，十分适合于昂贵金属的试验。参数如\ref{fig:试样尺寸}所示：
+%3-28日上午，经过老师说明，由于试样为板材，加工成圆柱较为困难，故加工成二位平面的“狗骨头”
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{pic/试样}
+	\caption{试样的尺寸参数}
+	\label{fig:试样尺寸}
+\end{figure}
+
+原始的材料板材$ 250\time 150 $（mm）的板材，为了加工出来目标形状的试样，本设计选用电火花线切割（Wire cut Electrical Discharge Machining）的方法进行加工。
+
+在一开始只考虑了材料的利用率，就设计了如\ref{fig:badway}所示的密集排列。但是在实际加工的时候，却发现在这样的设计方式根本不可行——没有夹具的位置，且刀路比较长。
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{pic/刀路初步}

@@ -1,0 +1,21 @@
+---
+title: "应力应变曲线"
+author: "sion"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+
+
+jia <- read_csv(
+  "1-1.txt", 
+  col_types=cols(
+    .default = col_double(),  )
+  )
+```
