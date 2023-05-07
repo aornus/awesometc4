@@ -64,14 +64,14 @@ $\beta$转变温度于TC4合金组织转变的关系非常密切，对于TC4合�
 
 关于$\beta$转变温度的具体值，目前广泛认同的是位于975℃附近，但是由于不同试样的合金元素的种类与含量的差异，尤其是局部化学成分的差异，使得不同研究人员实际测得的相变点温度有所差异\cite{wangtaoTC4hejinxiangbianwendujiancezhongjieguobuyizhiyuanyinfenxi2013}。姚德人等\cite{yaoderenTc4taihejinxiangbiandiandeceding1975}表明相变温度为975℃到980℃之间，此时的合金拥有最低的硬度，当温度略大时会发生$\beta$晶粒的显著长大；相变点以下50℃以内水淬，可以得到不同数量的初生$ \alpha $和马氏体$ \alpha^{\prime} $，而后再进行低温退火时，马氏体$ \alpha^{\prime} $又会转变为稳定的次生$ \alpha$和$ \beta $，可以得到较好的综合性能\footnote{\color{black}此文章写于1975年，但是仍然非常有参考价值}。刘伟东等人\cite{liuweidongTC4hejinVzhuanbianwendudejinxiangfacedingyulilunjisuan2014}通过连续升温金相法，使用EET\footnote{Empirical Electron Theory of solids and molecules“固体与分子经验电子理论”(简称余氏理论)}模型建模测得了\ti 合金的相变温度为974.58℃；孙宇、曾卫东等人\cite{sunyuYingyongrengongshenjingwangluoyanjiuhuaxueyuansuduitaihejinxiangbiandiandeyingxiang2010}通过人工神经网络ANN技术，运用反向传播算法，建立了三层神经网路-钛合金相变预测模型，最终预测得到在绝对误差为9.8℃的情况下，TC4的相变点为994.8℃。
 
-近年来，确定$ \beta $相变点的常见计算方法\cite{zhuhongTaihejinaVxiangbiandiandejizhongceshifangfatantao2013}主要有：连续升温金相法、X 射线衍射法、电阻法、等热膨胀法、元素含量法和神经网络模型预测预测法\cite{renchiqiangGurongshixiaoduiTC4taihejinxianweizuzhihelixuexingnengdeyingxiang2022}等。其中元素含量法是最为常用的方法，简单且准确。该方法根据合金中各元素对相变温度的影响\cite{ananyaLocationBasedIntelligent2011}利用经验公式\ref{jingyan}来对相变点进行推算:
+现阶段确定$ \beta $相变点的常见计算方法\cite{zhuhongTaihejinaVxiangbiandiandejizhongceshifangfatantao2013}主要有：连续升温金相法、X 射线衍射法、电阻法、等热膨胀法、元素含量法和神经网络模型预测预测法\cite{renchiqiangGurongshixiaoduiTC4taihejinxianweizuzhihelixuexingnengdeyingxiang2022}等。元素含量法是据合金中各元素对相变温度的影响\cite{ananyaLocationBasedIntelligent2011}利用经验公式\ref{jingyan}来对相变点进行推算；膨胀法是根据金属在加热过程中用发生相变时新相与母相的膨胀系数不同或比容 发生变化而确定相变点；金相法主要用于相变温度的检验，主要步骤是：先在计算得到的（比如元素含量法）理论相变温度附近每隔5°C或10°C热处理1个样品，然后在金相显微镜下观察到无剩余$\alpha$相的试样，将比该试样热处理温度低5°C的温度计为钛合金的$\alpha+\beta/\beta$相转变温度。各种方法各有优缺点，实验者应根据实际条件进行选取。
 \begin{equation}
 	T_\beta=885^{\circ} \mathrm{C}+\sum \textit{ 各元素含量 } \times \textit{ 各元素含量对 }(\alpha+\beta) / \beta \textit{ 相变点的影响 }
 	\label{jingyan}
 \end{equation}
 其中885℃为纯钛的相变点。
 
-故本设计采用元素含量法来对实验材料的$\beta$转变温度进行推算，元素含量如上\ref{sec:mytc4chem}所示，不同元素对于相变点温度的影响如\ref{sec:chem4ti}所示：
+在上述的各种测试方法中，元素含量法作为一种最为常用的方法，由于其简单且准确的特点，得到了较高频率的使用，大多数TC4合金热处理相关试验都使用了元素含量法进行相变点的计算\cite{LiuLeiTi6Al4VTaiHeJinBuTongReChuLiFangFaDeShiYanYuFuHeCaiLiaoLiXueXingNengFenXi2022,zouhaibeiTC4taihejinrechuliqianghuagongyijixiangbianhangweiyanjiu2019,liutaoRechuliduiTC4taihejindongtailixuexingnengheweiguanzuzhideyingxiang,baoxuechunRechuligongyiduiTC4taihejinzuzhihelixuexingnengdeyingxiang2019,wangpuqiangButongrechuligongyixiajiguangzengcaizhizaoTC4taihejinzuzhiyuxingnengyanjiujinzhan2020}，得到的结果都十分准确，具有较高的可信度。故本设计采用此方法来对实验材料的$\beta$转变温度进行推算，元素含量如上\ref{sec:mytc4chem}所示。通过计算不同元素对于相变点温度的影响，得到\ref{sec:chem4ti}：
 \begin{table}[htbp]
 	\centering
 	\caption{部分元素含量对钛合金相变点的影响}
@@ -103,7 +103,7 @@ T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_
 
 
 \subsection{试样设计与加工}
-本设计选择了尺寸较小的试样来进行实验：整体尺寸为$ 25mm\times 7.5mm $，厚度为1.3mm，呈现为两端略大，中间平行的骨头状。该类型的小件试样不仅可以节约材料，特殊的形状也便于进行后续的力学拉伸试验，满足实验要求，十分适合于昂贵金属的试验。参数如\ref{fig:试样尺寸}所示：
+本设计选择了尺寸较小的试样来进行实验：整体尺寸为$ 25mm\times 7.5mm $，厚度为1.3mm，呈现为两端略大，中间平行的骨头状。该类型的小件试样不仅可以节约材料，特殊的形状也便于进行后续的力学拉伸试验，满足实验要求，十分适合于昂贵金属的性能试验。参数如\ref{fig:试样尺寸}所示：
 %3-28日上午，经过老师说明，由于试样为板材，加工成圆柱较为困难，故加工成二位平面的“狗骨头”
 
 \begin{figure}[h!]
@@ -113,9 +113,9 @@ T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_
 	\label{fig:试样尺寸}
 \end{figure}
 
-原始的材料板材$ 250\time 150 $（mm）的板材，为了加工出来目标形状的试样，本设计选用电火花线切割（Wire cut Electrical Discharge Machining）的方法进行加工。
+原始的材料板材$ 250mm\times 150mm $的板材，为了加工出来目标形状的试样，本设计选用电火花线切割（Wire cut Electrical Discharge Machining）的方法进行加工。
 
-在一开始只考虑了材料的利用率，就设计了如\ref{fig:badway}所示的密集排列。但是在实际加工的时候，却发现在这样的设计方式根本不可行——没有夹具的位置，且刀路比较长。
+在加工的准备阶段，为了达到节约材料、提高材料的利用率的目标，设计了如\ref{fig:badway}所示的刀路，让式样尽可能密集排列，用最少的刀路切割来最多的试样。但在实际加工阶段，发现\ref{fig:badway}的刀路设计没有考虑夹具的安装位置、$ 0.05mm $粗的线切割用钼丝的尺寸，不要具备加工可行性。
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.8\linewidth]{pic/刀路初步}
@@ -123,14 +123,14 @@ T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_
 	\label{fig:badway}
 \end{figure}
 
-在仔细考虑了加工方法、设备特点、加工成本等因素后，在工程训练中心张冠老师的协助下，将加工方式改进成了：先把大板切割成八个小板，再把小板叠在一起进行加工的方法，最终切割出来了$ 7\times 8=56 $个试样。
+加工前的最后阶段，在综合考虑了加工方法、设备特点、加工成本\footnote{上述设计的小式样，每个加工费25元}等因素后，本实验加工方式改进为：整体板材板切割成八小板；小板堆叠装夹在一起进行加工，如图\ref{fig:goodway}所示，最终切割得到了$ 7\times 8=56 $个试样。
 \begin{figure}[h!]
 	\centering
-	\subfigure[堆叠式切割]{
+	\subfigure[堆叠式切割设计]{
 		\label{fig:goodway}
 		\includegraphics[width=0.4\linewidth]{pic/堆叠式切割}}
 	\hspace{0.2in} % 两图片之间的距离
-	\subfigure[切割结果]{
+	\subfigure[切割后的部分试样]{
 	\centering
 		\label{fig:mytc4bone}
 		\includegraphics[width=0.45\linewidth]{pic/切割后的试样}}
@@ -139,7 +139,7 @@ T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_
 
 \section{TC4钛合金的热处理方案设计}
 \subsection{TC4合金的热处理工艺性能}
-由~\ref{sec:1.1}可知，钛合金可以通过各种各样的相变过程来得到不同的组织结构。因而可以设计适宜的热处理工艺参数，来获得具有高强度的显微组织，由此实现\ti 合金力学性能和工艺性能的改善。\ti 合金热处理的一些特性如下：
+在小\ref{sec:1.1}提到过，钛合金可以通过各种各样的相变过程来得到不同的组织结构，所以可根据其固态相变的特点来设计适宜的热处理工艺参数，以获得具有高强度的显微组织，由此实现\ti 合金力学性能和工艺性能的改善。\ti 合金热处理的一些特性如下：
 \begin{enumerate}
 	%	\item 钛合金的热处理主要用于$\alpha+\beta$型钛合金。因为对于纯α型钛合金而言，马氏体相变不会使钛合金的性能发生显著变化。只能依赖淬火形成的亚稳相（包括马氏体相）的时效分解来进行。
 	%	\item 热处理应该避免形成ω相。形成ω相会使钛合金变脆，正确选择时效工艺（例如，采用较高的时效温度）即可使相分解。
@@ -148,14 +148,27 @@ T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_
 	\item $\beta$转变点差异大。即使是同一成分，但由于冶炼炉次的不同，其$\beta$转变温度有时差别很大。
 \end{enumerate}
 \subsection{TC4合金热处理工艺设计}
-常见的\ti 钛合金热处理工艺有：退火、淬火(往往加上时效处理)、形变热处理等，不同的热处理方式得到的组织性能各异。
+常见的\ti 钛合金热处理工艺有：退火、淬火(往往加上时效处理)、形变热处理等，不同的热处理方式得到的组织性能各异。现阶段\ti 合金的基本热处理工艺主要有：
+\begin{enumerate}
+	\item 固溶处理：实施固溶处理工艺，是为了得到等轴稳定的$\alpha $相、马氏体弥散的$ \alpha ^{\prime} $相、亚稳定状态的$\beta $相，等轴的$\alpha $相能够让合金的力学性能得到综合性的提升，马氏体弥散的$ \alpha ^{\prime} $相能够让合金，在强度、硬度上得到提高，塑性、韧性被降低\cite{gurong2002}。
+	\item 时效处理：次生的$\alpha $相体积分数在TC4钛合金中，会对屈服强度产生很大的影响。在条件相等的情况之下，时效温度越低组织越小，时效温度高低组织越大。研究人员主要是通过控制参数，来影响对次生$\alpha $相的含量，从而实现TC4钛合金强度和塑性的匹配。
+	\item 深冷处理：深冷处理是20世纪60年代以来兴起的一种新型冷处理工艺。通过对材料进行-130°C以下的低温处理，可以对金属内部的组织进行改善，并且能够让在热处理之后残留的奥氏体被清除掉。实验研究发现，原始的$\beta $相会在深冷处理的过程当中，逐渐的向$\alpha^{\prime} $相去转变，残余应力在组织中会变少，与此同时网篮状组织的增加，会让TC4钛合金的韧性、强度、塑性，在组织上的性能得到提高。
+	\item 氮化处理：常在冷轧后进行氮化处理，TC4在低温氮化过程中会发生重结晶，可以避免晶粒粗化，提高表面强度\cite{guotanliuMicrostructureEvolutionTi2022}。
+\end{enumerate}
+不同的热处理工艺互相组合可以对合金产生更好的强化效果，现阶段工业上常采用\cite{zhoukaixiangJiyushenlengchulidenanjiagongcailiaoqiexiaotexingyanjiu2022}：淬火+时效；固溶+时效；双重固溶+时效；固溶+双重时效;时效+冷轧+低温氮化等，其中固溶+时效处理是应用最为广泛的一种热处理工艺组合。
 
-鲁媛媛,马保飞等人研究发现在时效温度为450℃、500℃和550℃时初生α相的含量随温度升高逐渐增加;而在时效温度为600℃和650℃条件下初生$\alpha$相含量因高温溶解而明显减少, $\beta$相尺寸相应增大。当时效温度为550℃时, 所得钛合金的显微组织最佳\cite{luyuanyuanShixiaochuliduiTC4taihejinweiguanzuzhihelixuexingnengdeyingxiang2019}。刘婉颖、林元华等人通过实验发现：在960 ℃/1 h + WQ进行固溶处理和500 ℃/4 h + AC下进行时效处理得到的\ti 具有最佳的力学性能\cite{LiuWanYingBuTongReChuLiGongYiDuiTi6Al4VTaiHeJinWeiGuanJieGouHeLiXueXingNengYingXiangYingWen2017}；陈冠宇通过实验表明，在850℃进行退火处理时，在600℃进行时效处理可以使合金得到更好的耐腐蚀性能\cite{1200}；李宸宇证明\ti 合金在900℃空冷固溶两小时在530℃时效四小时后具有更好的强硬度，而且固溶后冷速越快，合金的强硬度越高、塑韧性越差\cite{900}。%第46页
+对于$\alpha+\beta$型的\ti 钛合金的固溶时效热处理工艺而言，其主要影响参数为固溶、时效的温度和时间\cite{mirror1,ranxingGurongwenduduiTi6Al4VELItaihejinxianweizuzhijixingnengdeyingxiang2021}。
 
-总之，对于$\alpha+\beta$型的\ti 钛合金的固溶时效热处理工艺而言，其主要影响参数为温度和时间\cite{mirror1,ranxingGurongwenduduiTi6Al4VELItaihejinxianweizuzhijixingnengdeyingxiang2021}。根据初步预测确定了固溶处理的最佳工艺制度为$ \beta $相变点以下30℃左右（这里取整数$ 977.325-30=947.325\approx950^{\circ} \mathrm{C} $）处理一个小时、时效温度在450℃左右处理一个小时。于是本设计设置了如下三个变量：固溶温度、固溶方式、时效温度。根据控制变量法，设计了如\ref{sec:first}所示的18组热处理实验：
+
+冉兴等人表明\cite{ranxingGurongwenduduiTi6Al4VELItaihejinxianweizuzhijixingnengdeyingxiang2021}在固溶温度为952℃附近时，TC4合金具有较高的强度，但随着温度的升高其脆性增加；鲁媛媛,马保飞等人研究发现在时效温度为450℃、500℃和550℃时初生α相的含量随温度升高逐渐增加;而在时效温度为600℃和650℃条件下初生$\alpha$相含量因高温溶解而明显减少, $\beta$相尺寸相应增大。当时效温度为550℃时, 所得钛合金的显微组织最佳\cite{luyuanyuanShixiaochuliduiTC4taihejinweiguanzuzhihelixuexingnengdeyingxiang2019}。刘婉颖、林元华等人通过实验发现：在960 ℃/1 h + WQ进行固溶处理和500 ℃/4 h + AC下进行时效处理得到的\ti 具有最佳的力学性能\cite{LiuWanYingBuTongReChuLiGongYiDuiTi6Al4VTaiHeJinWeiGuanJieGouHeLiXueXingNengYingXiangYingWen2017}；陈冠宇通过实验表明，在850℃进行退火处理时，在600℃进行时效处理可以使合金得到更好的耐腐蚀性能\cite{1200}；李宸宇证明\ti 合金在900℃空冷固溶两小时在530℃时效四小时后具有更好的强硬度，而且固溶后冷速越快，合金的强硬度越高、塑韧性越差\cite{900}。%第46页
+
+
+根据以上研究者的观点，初步预测确定了固溶处理的最佳工艺制度为$ \beta $相变点以下30℃左右（这里取整数$ 977.325-30=947.325\approx950^{\circ} \mathrm{C} $）处理一个小时、时效温度在450℃左右处理一个小时。经过研读，发现现阶段鲜对固溶冷却速度影响作用研究。于是本设计综合考量各个因素，设置了如下三个变量：固溶温度、固溶冷却方式（冷速）、时效温度来研究其对合金组织性能的影响。
+
+根据控制变量法，本设计初步设计了如\ref{sec:first}所示的18组热处理实验：
 \begin{table}[htbp]
 	\centering
-	\caption{\ti 原本的热处理制度设计}
+	\caption{以控制变量法为原则的热处理制度设计}
 	\label{sec:first}
 	\begin{tabular}{cccccc}
 		\toprule
@@ -192,11 +205,10 @@ T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_
 正交实验设计是研究多因素多水平的又一种设计方法，可以用更少的试验次数来研究多个变量之间的关系。它是根据正交性从全面试验中挑选出部分有代表性的点进行试验，这些有代表性的点具备了“均匀分散，齐整可比”的特点\cite{wangxueshen}。当实验次数太多时，根据正交实验设计，实验者可以选择一部分有代表性水平组合进行试验。 例如前面说的三因素三水平的实验，若按$ L9(3^4) $正交表安排实验，只需作9次，按$ L15(3^7) $正交表进行15次实验，就可以大大减少试验次数，提高实验效率、材料利用率。
 
 
-在没有通过正交实验设计优化之前，笔者的实验是如\ref{sec:first}所示，需要做$3\times2\times3  =18$次实验。但为了给子孙后代留下天蓝、地绿、水清的美丽家园，本实验高举可持续发展理念伟大旗帜，结合了正交实验方法$\color{black} L9.3.4 $对实验进行了优化。\\
-最终的热处理制度如下表所示：%\footnote{其中WQ表示水冷、FC表示炉冷、AC表示空冷。}
+在没有通过正交实验设计优化之前，笔者的实验是如\ref{sec:first}所示，需要做$3\times2\times3  =18$次实验。但为了给子孙后代留下天蓝、地绿、水清的美丽家园，本实验高举可持续发展理念伟大旗帜，结合了正交实验方法$\color{black} L9.3.4 $对实验进行了优化，最终的热处理制度如下表所示：%\footnote{其中WQ表示水冷、FC表示炉冷、AC表示空冷。}
 \begin{table}[htbp]
 	\centering
-	\caption{\ti 改进后的热处理制度}
+	\caption{经过正交实验法改进后的最终热处理制度}
 	\label{sec:myHT}
 	\resizebox{\linewidth}{!}{
 \begin{tabular}{ccccccc}
@@ -302,7 +314,7 @@ T_\beta&=885^{\circ} \mathrm{C}+\sum (\delta_{Al}+\delta_{V}+\delta_{Fe}+\delta_
 	\item 样品装入：将切好的样品用放置在样品架上，不要使样品直接接触炉子底部或顶部，以免影响加热效果。并确保样品间距均匀，并记录好摆放顺序。
 	\item 加热过程控制：将样品架或钛合金网放入炉中，启动加热程序。根据实验要求，控制加热速率、温度和保温时间等参数（这里分三批次\textbf{910-950-990}，每批次六个试样进行处理）。
 	\item 保温时间控制：加热到设计的温度后后，让试样保温一段时间，使其完全进入固溶状态。保持加热系统稳定，避免温度波动。
-	\item 停止加热：当固溶处理时间{\footnote{由于试样过小，老师建议加热10分钟，这样既可以节约时间，也可达到其他实验者粗大试样一个小时的效果}}到达后，停止加热并关闭加热系统，取出处理好的试样。
+	\item 停止加热：当固溶处理时间{\footnote{由于试样过小，为了节约资源，实际加热只进行了10分钟}}到达后，停止加热并关闭加热系统，取出处理好的试样。
 	\item 水淬或油淬：将处理后的样品快速分别浸入水中、淬火油中进行淬火（每批次四个水淬，两个油淬）。
 	\item 后处理：取出样品进行干燥、清洗、归类，并记录初步记录数据。
 \end{enumerate}

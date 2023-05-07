@@ -18,16 +18,56 @@
                 "text": "绪论.tex\n\\label{sec:1.1}"
             }
         ],
-        "CurrentFile": "绪论.tex",
+        "CurrentFile": "AwesomeTC4.tex",
         "FileVersion": 1,
         "Files": [
             {
-                "Col": 0,
+                "Col": 15,
                 "EditorGroup": 0,
                 "FileName": "AwesomeTC4.tex",
+                "FirstLine": 41,
+                "FoldedLines": "",
+                "Line": 54
+            },
+            {
+                "Col": 39,
+                "EditorGroup": 0,
+                "FileName": "xju.sty",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 46
+                "Line": 82
+            },
+            {
+                "Col": 142,
+                "EditorGroup": 0,
+                "FileName": "绪论.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 105
+            },
+            {
+                "Col": 51,
+                "EditorGroup": 0,
+                "FileName": "TC4钛合金的热处理实验.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 316
+            },
+            {
+                "Col": 18,
+                "EditorGroup": 0,
+                "FileName": "综合分析.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 7
+            },
+            {
+                "Col": 228,
+                "EditorGroup": 0,
+                "FileName": "TC4钛合金的力学性能实验与组织表征.tex",
+                "FirstLine": 0,
+                "FoldedLines": "",
+                "Line": 55
             },
             {
                 "Col": 1,
@@ -35,31 +75,7 @@
                 "FileName": "ciiiiiiiiite.bib",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 166
-            },
-            {
-                "Col": 27,
-                "EditorGroup": 0,
-                "FileName": "TC4钛合金的热处理实验.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 49
-            },
-            {
-                "Col": 27,
-                "EditorGroup": 0,
-                "FileName": "xju.sty",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 11
-            },
-            {
-                "Col": 97,
-                "EditorGroup": 0,
-                "FileName": "绪论.tex",
-                "FirstLine": 182,
-                "FoldedLines": "",
-                "Line": 192
+                "Line": 276
             }
         ],
         "MasterFile": "",
