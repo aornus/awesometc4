@@ -22,12 +22,12 @@
         "FileVersion": 1,
         "Files": [
             {
-                "Col": 13,
+                "Col": 15,
                 "EditorGroup": 0,
                 "FileName": "AwesomeTC4.tex",
-                "FirstLine": 52,
+                "FirstLine": 51,
                 "FoldedLines": "",
-                "Line": 65
+                "Line": 53
             },
             {
                 "Col": 27,
@@ -38,28 +38,12 @@
                 "Line": 11
             },
             {
-                "Col": 1,
-                "EditorGroup": 0,
-                "FileName": "ciiiiiiiiite.bib",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 166
-            },
-            {
                 "Col": 0,
                 "EditorGroup": 0,
-                "FileName": "绪论.tex",
+                "FileName": "TC4合金固溶时效处理.tex",
                 "FirstLine": 0,
                 "FoldedLines": "",
-                "Line": 192
-            },
-            {
-                "Col": 0,
-                "EditorGroup": 0,
-                "FileName": "TC4钛合金的热处理实验.tex",
-                "FirstLine": 0,
-                "FoldedLines": "",
-                "Line": 44
+                "Line": 0
             }
         ],
         "MasterFile": "",
