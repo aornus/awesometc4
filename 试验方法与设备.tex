@@ -72,12 +72,13 @@ $ \beta $相变温度是固溶处理中固溶温度与力学性能关系的一�
 关于$\beta$转变温度的具体值，目前广泛认同的是位于975℃附近，但是由于不同试样的合金元素的种类与含量的差异，尤其是局部化学成分的差异，使得不同研究人员实际测得的相变点温度有所差异\cite{wangtaoTC4hejinxiangbianwendujiancezhongjieguobuyizhiyuanyinfenxi2013}。姚德人等\cite{yaoderenTc4taihejinxiangbiandiandeceding1975}表明相变温度为975℃到980℃之间，此时的合金拥有最低的硬度，当温度略大时会发生$\beta$晶粒的显著长大；相变点以下50℃以内进行固溶处理，可以得到稳定的次生$ \alpha$和$ \beta $，使合金获得较好的综合性能%\footnote{\color{black}此文章写于1975年，但是仍然非常有参考价值}。
 刘伟东等人\cite{liuweidongTC4hejinVzhuanbianwendudejinxiangfacedingyulilunjisuan2014}通过连续升温金相法，使用EET\footnote{EFT全称：Empirical Electron Theory of solids and molecules,即固体与分子经验电子理论，常被简称为“余氏理论”。}模型建模测得了\ti 合金的相变温度为974.58℃；孙宇、曾卫东等人\cite{sunyuYingyongrengongshenjingwangluoyanjiuhuaxueyuansuduitaihejinxiangbiandiandeyingxiang2010}通过人工神经网络ANN技术，运用反向传播算法，建立了三层神经网路-钛合金相变预测模型，最终预测得到在绝对误差为9.8℃的情况下，TC4的相变点为994.8℃。
 
-现阶段确定$ \beta $相变点的常见计算方法\cite{zhuhongTaihejinaVxiangbiandiandejizhongceshifangfatantao2013}主要有：元素含量法、连续升温金相法、电阻法以及新兴的神经网络模型预测法\cite{renchiqiangGurongshixiaoduiTC4taihejinxianweizuzhihelixuexingnengdeyingxiang2022}等。元素含量法是据合金中各元素对相变温度的影响\cite{ananyaLocationBasedIntelligent2011}利用经验公式\ref{jingyan}来对相变点进行推算；膨胀法是在加热过程中金属发生相变时，通过新相与母相的膨胀系数或比容的变化来确定相变点的一种方法；金相法主要用于相变温度的检验，主要步骤是：先在计算得到的（比如元素含量法）理论相变温度附近每隔5°C或10°C热处理1个样品，然后在金相显微镜下观察到无剩余$\alpha$相的试样，将比该试样热处理温度低5°C的温度计为钛合金的$\alpha+\beta/\beta$相转变温度。各种方法各有优缺点，实验者应根据实际条件进行选取。
+现阶段确定$ \beta $相变点的常见计算方法\cite{zhuhongTaihejinaVxiangbiandiandejizhongceshifangfatantao2013}主要有：元素含量法、连续升温金相法、电阻法以及新兴的神经网络模型预测法\cite{renchiqiangGurongshixiaoduiTC4taihejinxianweizuzhihelixuexingnengdeyingxiang2022}等。元素含量法是据合金中各元素对相变温度的影响\cite{ananyaLocationBasedIntelligent2011}利用经验公式\ref{jingyan}来对相变点进行推算；%膨胀法是在加热过程中金属发生相变时，通过新相与母相的膨胀系数或比容的变化来确定相变点的一种方法；
+膨胀法是在加热过程中金属发生相变时，通过新相与母相的膨胀系数或比容的变化来确定相变点的一种方法；金相法主要用于相变温度的检验，主要步骤是：先在计算得到的（比如元素含量法）理论相变温度附近每隔5°C或10°C热处理1个样品，然后在金相显微镜下观察到无剩余$\alpha$相的试样，将比该试样热处理温度低5°C的温度计为钛合金的$\alpha+\beta/\beta$相转变温度。各种方法各有优缺点，实验者应根据实际条件进行选取。
 \begin{equation}
 	T_\beta=885^{\circ} \mathrm{C}+\sum \textit{ 各元素含量 } \times \textit{ 各元素含量对 }(\alpha+\beta) / \beta \textit{ 相变点的影响 }
 	\label{jingyan}
 \end{equation}
-其中885℃为纯钛的相变点。
+%其中885℃为纯钛的相变点。
 
 在上述的各种测试方法中，元素含量法作为一种最为常用的方法，由于其简单且准确的特点，得到了较高频率的使用，大多数TC4合金热处理相关试验都使用了元素含量法进行相变点的计算\cite{LiuLeiTi6Al4VTaiHeJinBuTongReChuLiFangFaDeShiYanYuFuHeCaiLiaoLiXueXingNengFenXi2022,zouhaibeiTC4taihejinrechuliqianghuagongyijixiangbianhangweiyanjiu2019,liutaoRechuliduiTC4taihejindongtailixuexingnengheweiguanzuzhideyingxiang,baoxuechunRechuligongyiduiTC4taihejinzuzhihelixuexingnengdeyingxiang2019,wangpuqiangButongrechuligongyixiajiguangzengcaizhizaoTC4taihejinzuzhiyuxingnengyanjiujinzhan2020}，得到的结果都十分准确，具有较高的可信度。故本设计采用此方法来对实验材料的$\beta$转变温度进行推算，元素含量如上\ref{sec:mytc4chem}所示。通过计算不同元素对于相变点温度的影响，得到\ref{sec:chem4ti}：
 
