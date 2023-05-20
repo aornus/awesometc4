@@ -108,23 +108,35 @@
 \section{固溶温度对组织性能的影响}
 固溶温度是\ti 合金热处理过程中最为关键的一个因素，其温度的高低直接决定了$\beta$相的分布。
 
-如图所示，在固溶温度较小时，合金最终的室温组织以等轴初生$\alpha$相为主。随着温度的升高，到达$\alpha+\beta$相区时，逐渐出现$\beta$相转变而成的$\alpha^\prime$相，这一结果也可以从XRD衍射图中看出来：所有组织中$\beta-Ti$的衍射峰几乎不存在，表明室温下不存在$\beta$相组织。当温度超过$\beta $转变终了线的时候，油冷、水冷得到的组织都是针状$\alpha^\prime$，这表明组织中原本的$\alpha$相已经全部转变为$\alpha^\prime$相。
+如图所示，在固溶温度较小时，合金最终的室温组织以等轴初生$\alpha$相为主。随着温度的升高，到达$\alpha+\beta$相区时，逐渐出现$\beta$相转变而成的$\alpha^\prime$相，%这一结果也可以从XRD衍射图中看出来：所有组织中$\beta-Ti$的衍射峰几乎不存在，表明室温下不存在$\beta$相组织。
+当温度超过$\beta $转变终了线的时候，油冷、水冷得到的组织都是针状$\alpha^\prime$，这表明组织中原本的$\alpha$相已经全部转变为$\alpha^\prime$相。
 
-% TODO: \usepackage{graphicx} required
+力学分析结果如\ref{fig:Gqy}所示，图中的几组数据都是经过了水冷处理，并根据时效温度的不同分为成了三组（依次为510℃、550℃、590℃），从图后两组的对比中可以看出，固溶温度在950℃附近的合金在处理后，抗拉强度比910℃、990℃都高；而当固溶温度达到990℃的时候，从第一、三组可以看到延伸率显著下降，这是因为固溶温度过高，组织中生成了魏氏组织的缘故。
+
+
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{pic/固溶温度与屈服强度、延伸率的关系}
+	\includegraphics[width=1\linewidth]{pic/固溶温度与屈服强度、延伸率的关系}
 	\caption{固溶温度与屈服强度、延伸率的关系}
 	\label{fig:Gqy}
 \end{figure}
 
 \section{冷却速度对组织性能的影响}
+本设计采用了两种淬火方式：油冷与水冷。由于淬火油的热传导速度相对较低，冷却速度较慢，与水冷相比，形成了不同的组织形貌。下面就强度较高的950℃组来进行分析。
+
+合金在加热过程中，随着温度的升高，$\alpha$相逐渐发生相变转变成$\beta$相，当温度加热到低于相变点时，细小的$\alpha$相先被溶解，剩下粗大的$\alpha$相组织和部分$\beta$，
+
+两者的特征如下：
+
+油冷后组织主要是初生等轴$\alpha$相和$\beta$转变组织形成的双态组织
+
+
 
 \section{时效温度对组织性能的影响}
-% TODO: \usepackage{graphicx} required
+时效温度在热处理过程中主要是影响了亚稳$\beta $相的分解。
 \begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.7\linewidth]{pic/时效温度与屈服强度、延伸率的关系}
+	\includegraphics[width=1\linewidth]{pic/时效温度与屈服强度、延伸率的关系}
 	\caption{时效温度与屈服强度、延伸率的关系}
 	\label{fig:sqy}
 \end{figure}
